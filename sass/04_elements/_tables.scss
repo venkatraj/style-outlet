@@ -1,0 +1,38 @@
+table {
+	
+	margin: 0 0 1.5em;
+	width: 100%;
+	
+	th {
+		font-family: $heading_font;	
+		a {
+			font-weight: 700;
+			display:block;
+			text-align:center;
+		}
+	}
+
+	td, th {
+		padding:15px 20px;
+		
+	}
+	thead tr th {
+		text-transform:uppercase;
+		border-top:1px solid rgba($c2,0.6);
+		border-bottom:1px solid rgba($c2,0.6);
+		&:first-child {
+			display:block;
+			text-align:center;
+		}
+	}	
+	
+	tbody {
+		td {
+			color:$c2;
+		}
+		th,td {
+			border-bottom:1px solid rgba($c2,0.6);
+		}
+	}
+}
+	
