@@ -42,7 +42,7 @@ gulp.task('images', function() {
 
 // Clean
 gulp.task('clean', function() {
-  return del(['images','js']);    
+  return del(['images']);    
 }); 
 
 

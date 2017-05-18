@@ -1,36 +1,43 @@
 <?php
-$style_outlet_page_builder = esc_html(__(  'Page Builder', 'style-outlet' ));
-$style_outlet_page_builder_details = esc_html(__( 'Style Outlet Pro supports Page Builder. All our shortcodes can be used as widgets too. You can drag and drop our widgets with page builder visual editor.', 'style-outlet' ));
-$style_outlet_page_layout = esc_html(__(  'Page Layout', 'style-outlet' ));
-$style_outlet_page_layout_details = esc_html(__( 'Style Outlet Pro offers many different page layouts so you can quickly and easily create your pages with various layout without any hassle!', 'style-outlet' ));
-$style_outlet_unlimited_sidebar = esc_html(__(  'Unlimited Sidebar', 'style-outlet' ));
-$style_outlet_unlimited_sidebar_details = esc_html(__(  'Unlimited sidebars allows you to create multiple sidebars. Check out our demo site to see how different pages displays different sidebars!', 'style-outlet' ));
-$style_outlet_shortcode_builder = esc_html(__(  'Shortcode Builder', 'style-outlet' ));
-$style_outlet_shortcode_builder_details = esc_html(__(  'With our shortcode builder and lots of shortcodes, you can easily create nested shortcodes and build custom pages!', 'style-outlet' ));
-$style_outlet_portfolio = esc_html(__(  'Multi Portfolio', 'style-outlet' ));
-$style_outlet_portfolio_details = esc_html(__(  '7 portfolio layouts with Isotope filtering, 3 blog layouts and multiple other alternate layouts for interior pages!', 'style-outlet' ));
-$style_outlet_typography = esc_html(__(  'Typography', 'style-outlet' ));
-$style_outlet_typography_details = esc_html(__( 'Style Outlet Pro loves typography, you can choose from over 500+ Google Fonts and Standard Fonts to customize your site!', 'style-outlet' ));
-$style_outlet_slider = esc_html(__(  'Awesome Sliders', 'style-outlet' ));
-$style_outlet_slider_details = esc_html(__( 'Style Outlet Pro includes two types of slider. You can use both Flex and Elastic sliders anywhere in your site.', 'style-outlet' ));
-$style_outlet_woocommerce = esc_html(__(  'Woo Commerce', 'style-outlet' ));
-$style_outlet_woocommerce_details = esc_html(__( 'Style Outlet Pro has full design/code integration for WooCommerce, your shop will look as good as the rest of your site!', 'style-outlet' ));
-$style_outlet_custom_widget = esc_html(__(  'Custom Widget', 'style-outlet' ));
-$style_outlet_custom_widget_details = esc_html(__(  'We offer many custom widgets that are stylized and ready for use. Simply drag &amp; drop into place to activate!', 'style-outlet' ));
-$style_outlet_advanced_admin = esc_html(__(  'Advanced Admin', 'style-outlet' ));
-$style_outlet_advanced_admin_details = esc_html(__(  ' you can customize any part of your site quickly and easily using customize options!', 'style-outlet' ));
-$style_outlet_font_awesome = esc_html(__(  'Font Awesome', 'style-outlet' ));
-$style_outlet_font_awesome_details = esc_html(__(  'Font Awesome icons are fully integrated into the theme. Use them anywhere in your site in 6 different sizes!', 'style-outlet' ));
-$style_outlet_responsive_layout = esc_html(__(  'Responsive Layout', 'style-outlet' ));
-$style_outlet_responsive_layout_details = esc_html(__( 'Style Outlet Pro is fully responsive and can adapt to any screen size. Resize your browser window to view it!', 'style-outlet' ));
-$style_outlet_testimonials = esc_html(__(  'Testimonials', 'style-outlet' ));
-$style_outlet_testimonials_details = esc_html(__(  'With our testimonial post type, shortcode and widget, Displaying testimonials is a breeze.', 'style-outlet' ));
-$style_outlet_social_media = esc_html(__(  'Social Media', 'style-outlet' ));
-$style_outlet_social_media_details = esc_html(__(  'Want your users to stay in touch? No problem, style outlet Pro has Social Media icons all throughout the theme!', 'style-outlet' ));
-$style_outlet_google_map = esc_html(__(  'Google Map', 'style-outlet' ));
-$style_outlet_google_map_details = esc_html(__( 'Style Outlet Pro includes Goole Map as shortcode and widget. So, you can use it anywhere in your site!', 'style-outlet' ));
-$style_outlet_view_demo = esc_html(__(  'View Demo', 'style-outlet'));
-$style_outlet_upgrade_to_pro = esc_html(__(  'Upgrade To Pro', 'style-outlet' ));
+$style_outlet_page_builder = esc_html(__( 'Page Builder', 'style-outlet' ));
+$style_outlet_page_builder_details = esc_html(__('Theme supports Page Builder. You can drag and drop our widgets with page builder visual editor.', 'style-outlet' ));
+$style_outlet_page_layout = esc_html(__( 'Page Layout', 'style-outlet' ));
+$style_outlet_page_layout_details = esc_html(__('Theme offers many different page layouts so you can quickly and easily create your pages with no hassle!', 'style-outlet' ));
+$style_outlet_unlimited_sidebar = esc_html(__( 'Unlimited Sidebar', 'style-outlet' ));
+$style_outlet_unlimited_sidebar_details = esc_html(__( 'Theme includes a different sidebar layouts. Unlimited sidebars allow you to create custom sidebars that match the style and layout of pages!', 'style-outlet' ));
+$style_outlet_custom_widget = esc_html(__( 'Custom Widget', 'style-outlet' ));
+$style_outlet_custom_widget_details = esc_html(__( 'We offer many custom widgets that are stylized and ready for use. Simply drag & drop into place to activate!', 'style-outlet' ));
+$style_outlet_portfolio = esc_html(__( 'Multi Portfolio', 'style-outlet' ));
+$style_outlet_portfolio_details = esc_html(__( 'Theme have a unlimited customization options in portfolio. You can use 2, 3, or 4 Columns with masonry layouts!', 'style-outlet' ));
+$style_outlet_typography = esc_html(__( 'Typography', 'style-outlet' ));
+$style_outlet_typography_details = esc_html(__('Theme loves typography, you can choose from over 500+ Google Fonts and Standard Fonts to customize your site!', 'style-outlet' ));
+$style_outlet_slider = esc_html(__( 'Awesome Sliders', 'style-outlet' ));
+$style_outlet_slider_details = esc_html(__('Theme includes Flex and Elastic sliders . You can use flexslider as a image,video and google map anywhere in your site.', 'style-outlet' ));
+$style_outlet_woocommerce = esc_html(__( 'Woo Commerce', 'style-outlet' ));
+$style_outlet_woocommerce_details = esc_html(__('Theme has full design/code integration for WooCommerce, your shop will look as good as the rest of your site!', 'style-outlet' ));
+$style_outlet_retina_ready = esc_html(__( 'Retina Ready', 'style-outlet' ));
+$style_outlet_retina_ready_details = esc_html(__( 'Theme is Retina Ready. So, Everything looks amazingly sharp and crisp on high resolution retina displays of all sizes!', 'style-outlet' ));
+$style_outlet_icons = esc_html(__( 'Icons', 'style-outlet' ));
+$style_outlet_icons_details = esc_html(__( ' Choose from over 2500 icons are fully integrated into the theme. Use them anywhere in your site with select your own size and color.', 'style-outlet' ));
+$style_outlet_support = esc_html(__( 'Excellent Support', 'style-outlet' ));
+$style_outlet_support_details = esc_html(__( 'We truly care about our customers and themes performance. We assure you that you will get the best after sale support like never before!', 'style-outlet' ));
+$style_outlet_responsive_layout = esc_html(__( 'Responsive Layout', 'style-outlet' ));
+$style_outlet_responsive_layout_details = esc_html( __('Theme is fully responsive and can adapt to any screen size. Resize your browser window to view it!', 'style-outlet' ));
+$style_outlet_testimonials = esc_html( __( 'Testimonials', 'style-outlet' ));
+$style_outlet_testimonials_details = esc_html( __( 'Display your clients\' glowing comments about your business on your homepage. Showing a specific number of testimonials with use of testimonial widget. ', 'style-outlet' ));
+$style_outlet_social_media = esc_html( __( 'Social Media', 'style-outlet' ));
+$style_outlet_social_media_details = esc_html( __( 'Want your users to stay in touch? No problem, Theme has Social Media icons all throughout the theme!', 'style-outlet' ));
+$style_outlet_google_map = esc_html( __( 'Google Map', 'style-outlet' ));
+$style_outlet_google_map_details = esc_html( __('Theme includes Goole Map widget. Find a place on the map and get directions. Or get info like business hours and menus, and see Street View imagery.', 'style-outlet' ));
+$style_outlet_customization = esc_html( __( 'Customization', 'style-outlet' ));
+$style_outlet_customization_details = esc_html( __('With advanced theme options, page options & extensive docs, its never been easier to customize a theme!', 'style-outlet' ));
+$style_outlet_demo_content = esc_html( __( 'Demo content', 'style-outlet' ));
+$style_outlet_demo_content_details = esc_html( __('Theme includes single click demo content. You can quickly setup the site like our demo and get started easily!', 'style-outlet' ));
+$style_outlet_improvement = esc_html( __( 'Improvement', 'style-outlet' ));
+$style_outlet_improvement_details = esc_html( __('We love our theme and customers. We are committed to improve and add new features to Theme!', 'style-outlet' ));
+
+$style_outlet_view_demo = esc_html( __( 'View Demo', 'style-outlet'));
+$style_outlet_upgrade_to_pro = esc_html( __( 'Upgrade To Pro', 'style-outlet' ));
 
 
 $style_outlet_why_upgrade = <<< FEATURES
@@ -52,11 +59,11 @@ $style_outlet_why_upgrade = <<< FEATURES
 </div>
 <div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-code-fork"></i></div>
-	<h3>$style_outlet_shortcode_builder</h3>
-	<p>$style_outlet_shortcode_builder_details</p>
+	<h3>$style_outlet_custom_widget</h3>
+	<p>$style_outlet_custom_widget_details</p>
 </div>
 <div class="one-third column">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-camera"></i></div>
+	<div class="icon-wrap"><i class="fa  fa-5x fa-list-alt"></i></div>
 	<h3>$style_outlet_portfolio</h3>
 	<p>$style_outlet_portfolio_details</p>
 </div>
@@ -71,37 +78,37 @@ $style_outlet_why_upgrade = <<< FEATURES
 	<p>$style_outlet_slider_details</p>
 </div>
 <div class="one-third column">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-leaf"></i></div>
+	<div class="icon-wrap"><i class="fa  fa-5x fa-shopping-cart"></i></div>
 	<h3>$style_outlet_woocommerce</h3>
 	<p>$style_outlet_woocommerce_details</p>
 </div>
 <div class="one-third column">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-tasks"></i></div>
-	<h3>$style_outlet_custom_widget</h3>
-	<p>$style_outlet_custom_widget_details</p>
+	<div class="icon-wrap"><i class="fa  fa-5x fa-magic"></i></div>
+	<h3>$style_outlet_retina_ready</h3>
+	<p>$style_outlet_retina_ready_details</p>
 </div>
 <div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-dashboard"></i></div>
-	<h3>$style_outlet_advanced_admin</h3>
-	<p>$style_outlet_advanced_admin_details</p>
+	<h3>$style_outlet_icons</h3>
+	<p>$style_outlet_icons_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-magic"></i></div>
-	<h3>$style_outlet_font_awesome</h3>
-	<p>$style_outlet_font_awesome_details</p>
+	<h3>$style_outlet_support</h3>
+	<p>$style_outlet_support_details</p>
 </div>
 <div class="one-third column">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-arrows"></i></div>
+	<div class="icon-wrap"><i class="fa  fa-5x fa-desktop"></i></div>
 	<h3>$style_outlet_responsive_layout</h3>
 	<p>$style_outlet_responsive_layout_details</p>
 </div>
 <div class="one-third column clear">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-magic"></i></div>
+	<div class="icon-wrap"><i class="fa  fa-5x fa-rocket"></i></div>
 	<h3>$style_outlet_testimonials</h3>
 	<p>$style_outlet_testimonials_details</p>
 </div>
 <div class="one-third column">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-twitter"></i></div>
+	<div class="icon-wrap"><i class="fa  fa-5x fa-skype"></i></div>
 	<h3>$style_outlet_social_media</h3>
 	<p>$style_outlet_social_media_details</p>
 </div>
@@ -110,12 +117,28 @@ $style_outlet_why_upgrade = <<< FEATURES
 	<h3>$style_outlet_google_map</h3>
 	<p>$style_outlet_google_map_details</p>
 </div>
+<div class="one-third column clear">
+	<div class="icon-wrap"><i class="fa  fa-5x fa-edit"></i></div>
+	<h3>$style_outlet_customization</h3>
+	<p>$style_outlet_customization_details</p>
+</div>
+<div class="one-third column">
+	<div class="icon-wrap"><i class="fa  fa-5x fa-check"></i></div>
+	<h3>$style_outlet_demo_content</h3>
+	<p>$style_outlet_demo_content_details</p>
+</div>
+<div class="one-third column">
+	<div class="icon-wrap"><i class="fa  fa-5x fa-signal"></i></div>
+	<h3>$style_outlet_improvement</h3>
+	<p>$style_outlet_improvement_details</p>
+</div>
 FEATURES;
 
 function style_outlet_theme_page() {
+	$title = esc_html(__('Style Outlet','style-outlet'));
 	add_theme_page( 
 		__( 'Upgrade To Style Outlet Pro','style-outlet'),
-		__( 'Style Outlet Theme','style-outlet'),
+		$title.'<i class="fa fa-plane theme-icon"></i>', 
 		'edit_theme_options',
 		'style_outlet_upgrade',
 		'style_outlet_display_upgrade'
@@ -141,12 +164,13 @@ function style_outlet_display_upgrade() {
 
     <div class="style-outlet-wrapper about-wrap">
         <h1><?php printf(esc_html__('Welcome to Style Outlet - Version %1s', 'style-outlet'), $theme_data->Version ); ?></h1>
-        <div class="about-text"><?php esc_html_e( 'Style Outlet is Powerful multipurpose e-commerce/WooCommerce WordPress Theme. Style Outlet  is the perfect free theme for e-commerce shop. ', 'style-outlet' ); ?></div>
-        <p class="upgrade-btn"><a class="upgrade" href="https://genexthemes.com/style-outlet/" target="_blank"><i class="fa fa-upload"></i><?php esc_html_e( 'Style Outlet', 'style-outlet' ); ?></a></p>
+        <div class="about-text"><?php esc_html_e( 'Style Outlet is Powerful multipurpose e-commerce/WooCommerce WordPress Theme. Style Outlet  is the perfect free theme for e-commerce shop. Style Outlet is responsive mobile optimized and using skeleton framework. Stylesheet is generated using SASS and so stays DRY. Best suited for Corporate/Business/Blog sites. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 4 Footer Widget Areas. ', 'style-outlet' ); ?></div>
+        <a href="https://genexthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
+        <p class="upgrade-btn"><a class="upgrade" href="https://genexthemes.com/style-outlet/" target="_blank"><i class="fa fa-upload"></i><?php esc_html_e( 'Buy Style Outlet Pro', 'style-outlet' ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
 	        <a href="?page=style_outlet_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Style Outlet', 'style-outlet' ) ?></a>
-	        <a href="?page=style_outlet_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Pro Fearures', 'style-outlet' );  ?></a>
+	        <a href="?page=style_outlet_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Fearures', 'style-outlet' );  ?></a>
 	        <?php do_action( 'style_outlet_admin_more_tabs' ); ?>
 	    </h2>    
 

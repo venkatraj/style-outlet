@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Style Outlet\n"
-"POT-Creation-Date: 2017-05-04 12:22+0530\n"
-"PO-Revision-Date: 2017-05-04 13:03+0530\n"
+"POT-Creation-Date: 2017-05-18 09:46+0530\n"
+"PO-Revision-Date: 2017-05-18 09:47+0530\n"
 "Last-Translator: \n"
 "Language-Team: Genex Themes\n"
 "Language: English\n"
@@ -15,10 +15,6 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SearchPath-0: ..\n"
-
-#: ../header.php:69 ../functions.php:206
-msgid "View your shopping cart"
-msgstr ""
 
 #: ../header.php:70 ../functions.php:206
 #, php-format
@@ -64,15 +60,18 @@ msgstr ""
 msgid "Footer Nav"
 msgstr ""
 
+#: ../functions.php:206
+msgid "View your shopping cart"
+msgstr ""
+
 #: ../inc/options-config.php:2
 msgid "Page Builder"
 msgstr ""
 
 #: ../inc/options-config.php:3
 msgid ""
-"Style Outlet Pro supports Page Builder. All our shortcodes can be used as "
-"widgets too. You can drag and drop our widgets with page builder visual "
-"editor."
+"Theme supports Page Builder. You can drag and drop our widgets with page "
+"builder visual editor."
 msgstr ""
 
 #: ../inc/options-config.php:4
@@ -81,8 +80,8 @@ msgstr ""
 
 #: ../inc/options-config.php:5
 msgid ""
-"Style Outlet Pro offers many different page layouts so you can quickly and "
-"easily create your pages with various layout without any hassle!"
+"Theme offers many different page layouts so you can quickly and easily "
+"create your pages with no hassle!"
 msgstr ""
 
 #: ../inc/options-config.php:6
@@ -91,18 +90,18 @@ msgstr ""
 
 #: ../inc/options-config.php:7
 msgid ""
-"Unlimited sidebars allows you to create multiple sidebars. Check out our "
-"demo site to see how different pages displays different sidebars!"
+"Theme includes a different sidebar layouts. Unlimited sidebars allow you to "
+"create custom sidebars that match the style and layout of pages!"
 msgstr ""
 
 #: ../inc/options-config.php:8
-msgid "Shortcode Builder"
+msgid "Custom Widget"
 msgstr ""
 
 #: ../inc/options-config.php:9
 msgid ""
-"With our shortcode builder and lots of shortcodes, you can easily create "
-"nested shortcodes and build custom pages!"
+"We offer many custom widgets that are stylized and ready for use. Simply "
+"drag & drop into place to activate!"
 msgstr ""
 
 #: ../inc/options-config.php:10
@@ -111,8 +110,8 @@ msgstr ""
 
 #: ../inc/options-config.php:11
 msgid ""
-"7 portfolio layouts with Isotope filtering, 3 blog layouts and multiple "
-"other alternate layouts for interior pages!"
+"Theme have a unlimited customization options in portfolio. You can use 2, 3, "
+"or 4 Columns with masonry layouts!"
 msgstr ""
 
 #: ../inc/options-config.php:12
@@ -121,8 +120,8 @@ msgstr ""
 
 #: ../inc/options-config.php:13
 msgid ""
-"Style Outlet Pro loves typography, you can choose from over 500+ Google "
-"Fonts and Standard Fonts to customize your site!"
+"Theme loves typography, you can choose from over 500+ Google Fonts and "
+"Standard Fonts to customize your site!"
 msgstr ""
 
 #: ../inc/options-config.php:14
@@ -131,8 +130,8 @@ msgstr ""
 
 #: ../inc/options-config.php:15
 msgid ""
-"Style Outlet Pro includes two types of slider. You can use both Flex and "
-"Elastic sliders anywhere in your site."
+"Theme includes Flex and Elastic sliders . You can use flexslider as a image,"
+"video and google map anywhere in your site."
 msgstr ""
 
 #: ../inc/options-config.php:16
@@ -141,38 +140,38 @@ msgstr ""
 
 #: ../inc/options-config.php:17
 msgid ""
-"Style Outlet Pro has full design/code integration for WooCommerce, your shop "
-"will look as good as the rest of your site!"
+"Theme has full design/code integration for WooCommerce, your shop will look "
+"as good as the rest of your site!"
 msgstr ""
 
 #: ../inc/options-config.php:18
-msgid "Custom Widget"
+msgid "Retina Ready"
 msgstr ""
 
 #: ../inc/options-config.php:19
 msgid ""
-"We offer many custom widgets that are stylized and ready for use. Simply "
-"drag &amp; drop into place to activate!"
+"Theme is Retina Ready. So, Everything looks amazingly sharp and crisp on "
+"high resolution retina displays of all sizes!"
 msgstr ""
 
 #: ../inc/options-config.php:20
-msgid "Advanced Admin"
+msgid "Icons"
 msgstr ""
 
 #: ../inc/options-config.php:21
 msgid ""
-" you can customize any part of your site quickly and easily using customize "
-"options!"
+" Choose from over 2500 icons are fully integrated into the theme. Use them "
+"anywhere in your site with select your own size and color."
 msgstr ""
 
 #: ../inc/options-config.php:22
-msgid "Font Awesome"
+msgid "Excellent Support"
 msgstr ""
 
 #: ../inc/options-config.php:23
 msgid ""
-"Font Awesome icons are fully integrated into the theme. Use them anywhere in "
-"your site in 6 different sizes!"
+"We truly care about our customers and themes performance. We assure you that "
+"you will get the best after sale support like never before!"
 msgstr ""
 
 #: ../inc/options-config.php:24
@@ -181,8 +180,8 @@ msgstr ""
 
 #: ../inc/options-config.php:25
 msgid ""
-"Style Outlet Pro is fully responsive and can adapt to any screen size. "
-"Resize your browser window to view it!"
+"Theme is fully responsive and can adapt to any screen size. Resize your "
+"browser window to view it!"
 msgstr ""
 
 #: ../inc/options-config.php:26
@@ -191,8 +190,8 @@ msgstr ""
 
 #: ../inc/options-config.php:27
 msgid ""
-"With our testimonial post type, shortcode and widget, Displaying "
-"testimonials is a breeze."
+"Display your clients' glowing comments about your business on your homepage. "
+"Showing a specific number of testimonials with use of testimonial widget. "
 msgstr ""
 
 #: ../inc/options-config.php:28
@@ -201,8 +200,8 @@ msgstr ""
 
 #: ../inc/options-config.php:29
 msgid ""
-"Want your users to stay in touch? No problem, style_outlet Pro has Social "
-"Media icons all throughout the theme!"
+"Want your users to stay in touch? No problem, Theme has Social Media icons "
+"all throughout the theme!"
 msgstr ""
 
 #: ../inc/options-config.php:30
@@ -211,194 +210,224 @@ msgstr ""
 
 #: ../inc/options-config.php:31
 msgid ""
-"Style Outlet Pro includes Goole Map as shortcode and widget. So, you can use "
-"it anywhere in your site!"
+"Theme includes Goole Map widget. Find a place on the map and get directions. "
+"Or get info like business hours and menus, and see Street View imagery."
 msgstr ""
 
 #: ../inc/options-config.php:32
-msgid "View Demo"
+msgid "Customization"
 msgstr ""
 
 #: ../inc/options-config.php:33
+msgid ""
+"With advanced theme options, page options & extensive docs, its never been "
+"easier to customize a theme!"
+msgstr ""
+
+#: ../inc/options-config.php:34
+msgid "Demo content"
+msgstr ""
+
+#: ../inc/options-config.php:35
+msgid ""
+"Theme includes single click demo content. You can quickly setup the site "
+"like our demo and get started easily!"
+msgstr ""
+
+#: ../inc/options-config.php:36
+msgid "Improvement"
+msgstr ""
+
+#: ../inc/options-config.php:37
+msgid ""
+"We love our theme and customers. We are committed to improve and add new "
+"features to Theme!"
+msgstr ""
+
+#: ../inc/options-config.php:39
+msgid "View Demo"
+msgstr ""
+
+#: ../inc/options-config.php:40
 msgid "Upgrade To Pro"
 msgstr ""
 
-#: ../inc/options-config.php:117
+#: ../inc/options-config.php:138
+msgid "Style Outlet"
+msgstr ""
+
+#: ../inc/options-config.php:140
 msgid "Upgrade To Style Outlet Pro"
 msgstr ""
 
-#: ../inc/options-config.php:118
-msgid "Style Outlet Theme"
-msgstr ""
-
-#: ../inc/options-config.php:205 ../inc/options-config.php:206
+#: ../inc/options-config.php:229 ../inc/options-config.php:230
 msgid "Theme Options"
 msgstr ""
 
-#: ../inc/options-config.php:209
+#: ../inc/options-config.php:233
 msgid "General"
 msgstr ""
 
-#: ../inc/options-config.php:210
+#: ../inc/options-config.php:234
 msgid "General settings that affects overall site"
 msgstr ""
 
-#: ../inc/options-config.php:214
+#: ../inc/options-config.php:238
 msgid "Enable Breadcrumb"
 msgstr ""
 
-#: ../inc/options-config.php:220
+#: ../inc/options-config.php:244
 msgid "Select Breadcrumb Character"
 msgstr ""
 
-#: ../inc/options-config.php:231
+#: ../inc/options-config.php:255
 msgid "Enable Numeric Page Navigation"
 msgstr ""
 
-#: ../inc/options-config.php:232
+#: ../inc/options-config.php:256
 msgid ""
 "Check to display numeric page navigation, instead of Previous Posts / Next "
 "Posts links."
 msgstr ""
 
-#: ../inc/options-config.php:238
+#: ../inc/options-config.php:262
 msgid "Website Layout Options"
 msgstr ""
 
-#: ../inc/options-config.php:239
+#: ../inc/options-config.php:263
 msgid "Select main content and sidebar alignment."
 msgstr ""
 
-#: ../inc/options-config.php:241
+#: ../inc/options-config.php:265
 msgid "Sidebar Left"
 msgstr ""
 
-#: ../inc/options-config.php:242
+#: ../inc/options-config.php:266
 msgid "Sidebar Right"
 msgstr ""
 
-#: ../inc/options-config.php:243
+#: ../inc/options-config.php:267
 msgid "Full Width"
 msgstr ""
 
-#: ../inc/options-config.php:244
+#: ../inc/options-config.php:268
 msgid "No Sidebar"
 msgstr ""
 
-#: ../inc/options-config.php:252
+#: ../inc/options-config.php:276
 msgid "Header"
 msgstr ""
 
-#: ../inc/options-config.php:253
+#: ../inc/options-config.php:277
 msgid "Header options"
 msgstr ""
 
-#: ../inc/options-config.php:257
+#: ../inc/options-config.php:281
 msgid "Logo as Title"
 msgstr ""
 
-#: ../inc/options-config.php:263
+#: ../inc/options-config.php:287
 msgid "Show site Tagline"
 msgstr ""
 
-#: ../inc/options-config.php:277
+#: ../inc/options-config.php:301
 msgid "Footer"
 msgstr ""
 
-#: ../inc/options-config.php:278
+#: ../inc/options-config.php:302
 msgid "Footer related options"
 msgstr ""
 
-#: ../inc/options-config.php:282
+#: ../inc/options-config.php:306
 msgid "Footer Widget Area"
 msgstr ""
 
-#: ../inc/options-config.php:288
+#: ../inc/options-config.php:312
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: ../inc/options-config.php:289
+#: ../inc/options-config.php:313
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: ../inc/options-config.php:295
+#: ../inc/options-config.php:319
 msgid "Home"
 msgstr ""
 
-#: ../inc/options-config.php:296
+#: ../inc/options-config.php:320
 msgid "Home Page options"
 msgstr ""
 
-#: ../inc/options-config.php:300
+#: ../inc/options-config.php:324
 msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: ../inc/options-config.php:306
+#: ../inc/options-config.php:330
 msgid "Slider Posts Category"
 msgstr ""
 
-#: ../inc/options-config.php:311
+#: ../inc/options-config.php:335
 msgid "No. of Sliders"
 msgstr ""
 
-#: ../inc/options-config.php:317
+#: ../inc/options-config.php:341
 msgid "Enable Home page Service Section Discount Offer"
 msgstr ""
 
-#: ../inc/options-config.php:323 ../inc/options-config.php:328
-#: ../inc/options-config.php:333
+#: ../inc/options-config.php:347 ../inc/options-config.php:352
+#: ../inc/options-config.php:357
 msgid "Select the page to display Service Offer"
 msgstr ""
 
-#: ../inc/options-config.php:346
+#: ../inc/options-config.php:370
 msgid "Blog"
 msgstr ""
 
-#: ../inc/options-config.php:347
+#: ../inc/options-config.php:371
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: ../inc/options-config.php:351
+#: ../inc/options-config.php:375
 msgid "Enable Featured Image"
 msgstr ""
 
-#: ../inc/options-config.php:357
+#: ../inc/options-config.php:381
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: ../inc/options-config.php:367
+#: ../inc/options-config.php:391
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: ../inc/options-config.php:373
+#: ../inc/options-config.php:397
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: ../inc/options-config.php:383
+#: ../inc/options-config.php:407
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: ../inc/options-config.php:384
+#: ../inc/options-config.php:408
 msgid "Show Author information box below single post."
 msgstr ""
 
-#: ../inc/options-config.php:390
+#: ../inc/options-config.php:414
 msgid "Show Related posts"
 msgstr ""
 
-#: ../inc/options-config.php:391
+#: ../inc/options-config.php:415
 msgid "Show related posts."
 msgstr ""
 
-#: ../inc/options-config.php:397
+#: ../inc/options-config.php:421
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: ../inc/options-config.php:407
+#: ../inc/options-config.php:431
 msgid " Show Comments"
 msgstr ""
 
-#: ../inc/options-config.php:408
+#: ../inc/options-config.php:432
 msgid "Show Comments"
 msgstr ""
 
@@ -450,10 +479,6 @@ msgctxt "Next post link"
 msgid ""
 "%title&nbsp;<span class=\"meta-nav\"><i class=\"fa fa-angle-right\"></i></"
 "span>"
-msgstr ""
-
-#: ../inc/template-tags.php:223
-msgid "Recent Blogs"
 msgstr ""
 
 #: ../inc/template-tags.php:285 ../template-parts/content.php:48
@@ -513,12 +538,16 @@ msgstr ""
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: ../inc/template-tags.php:613
+#: ../inc/template-tags.php:591
 #, php-format
 msgid ""
 "Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
 "our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome "
 "page</a>"
+msgstr ""
+
+#: ../inc/template-tags.php:592
+msgid "Get started with Style Outlet"
 msgstr ""
 
 #: ../admin/class-tgm-plugin-activation.php:327

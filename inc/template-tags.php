@@ -587,7 +587,8 @@ if( !function_exists('style_outlet_one_activation_admin_notice') ) {
  * @return bool|null
  */
 function style_outlet_admin_notice() { ?>
-    <div class="updated notice notice-success notice-alt is-dismissible">
+    <div class="updated notice notice-alt notice-success is-dismissible">  
         <p><?php printf( __( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href="%2$s">Welcome page</a>', 'style-outlet' ), 'Style Outlet', esc_url( admin_url( 'themes.php?page=style_outlet_upgrade' ) ) ); ?></p>
+        <p><a href="<?php echo esc_url( admin_url( 'themes.php?page=style_outlet_upgrade' ) ); ?>" class="button" style="text-decoration: none;"><?php _e( 'Get started with Style Outlet', 'style-outlet' ); ?></a></p>
     </div><?php
 }
