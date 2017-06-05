@@ -203,12 +203,11 @@ blockquote {
 	position: relative;
 	margin: 0;
 	display: inline-block;
-	margin-bottom: 20px;
-	margin-top: 30px;  
 	@include font-size(2);
 	font-family: $heading_font;
-	padding: 1% 10px 1% 40px;
+	padding: 0 10px 1% 40px;
 	border-radius: 3px;
+	margin-bottom: 20px;
 
 	&:before {
 		position: absolute;
@@ -216,28 +215,22 @@ blockquote {
 		@include font-size(2.5);
 		font-family: 'FontAwesome';
 		left: 20px;
-		top: calc(1% + 25px );
+		top: 0;
 		color: $c2;	
 	}	
 
 	p {
 		margin-bottom: 0;
 		@include font-size(2);
-		padding: 20px;
+		padding: 5px 20px;
 		color: $c2;
 		position: relative;
 		font-weight:700;
 	
-		cite {
+		cite {  
 			font-style: normal;
 			text-transform: uppercase;
-			color: $white;
-		}
-		a, a:visited {
-			color: $white;
-			@include font-size(1.4);
-		}
-
+		} 
 		a:hover {
 			color: $c2;
 		}

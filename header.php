@@ -27,13 +27,13 @@
 				<div class="container">		
 					<div class="eight columns">
 						<div class="cart-left">
-							<?php dynamic_sidebar('top-left' ); ?>
+							<?php dynamic_sidebar('top-left'); ?>
 						</div>
 					</div>
 
 					<div class="eight columns">
 						<div class="cart-right">
-							<?php dynamic_sidebar('top-right' ); ?>  
+							<?php dynamic_sidebar('top-right'); ?>  
 						</div>
 					</div>
 
@@ -81,12 +81,8 @@
 					</nav><!-- #site-navigation -->
 				</div>
 			</div>
+		</div>  
 	</header><!-- #masthead -->
 
-<?php
-	if( is_front_page() && !is_home() ) { 
-		do_action( 'style_outlet_action_before_content' );  
-	}
-?>
 
 

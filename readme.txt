@@ -2,8 +2,8 @@
 Contributors: Genex
 Tags: e-commerce, blog, custom-menu, custom-background, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns
 Requires at least: 4.0
-Tested up to: 4.7.4
-Stable tag: 1.0.1
+Tested up to: 4.7.5
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,12 +51,12 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.2 =
 * Initial Release
 
 == Upgrade Notice ==
 
-= 1.0.1 =
+= 1.0.2 =
 * Initial Release
 
 == Resources ==
@@ -65,7 +65,8 @@ Enable/Disable featured images visibility.
 * {Flexslider} © 2015 Woo Themes, GPLv2 ,https://github.com/style outlet/FlexSlider
 * {FontAwesome} © Dave Gandy, SIL OFL 1.1 and MIT ,https://fortawesome.github.io/Font-Awesome
 * Screenshot Images is licensed under CC0 Public Domain License.(http://pixabay.com/en/service/terms/)
-https://pixabay.com/en/stand-alone-standing-alone-face-men-1686740/
-https://pixabay.com/en/men-eyewear-young-sunglasses-1262248/
-https://pixabay.com/en/studio-portrait-blond-blondie-girl-487065/
-https://pixabay.com/en/female-mobile-phone-cell-phone-850599/
+	https://pixabay.com/en/stand-alone-standing-alone-face-men-1686740/
+	https://pixabay.com/en/men-eyewear-young-sunglasses-1262248/
+	https://pixabay.com/en/studio-portrait-blond-blondie-girl-487065/
+	https://pixabay.com/en/female-mobile-phone-cell-phone-850599/
+* All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain License GPLv2.

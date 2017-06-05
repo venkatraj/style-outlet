@@ -4,7 +4,7 @@ Theme URI: http://www.genexthemes.com/style-outlet/
 Author: V. Uma Rani
 Author URI: http://www.genexthemes.com/
 Description: Style Outlet is Powerful multipurpose e-commerce/WooCommerce WordPress Theme. Style Outlet  is the perfect free theme for e-commerce shop. Style Outlet is responsive mobile optimized and using skeleton framework. Stylesheet is generated using SASS and so stays DRY. Best suited for Corporate/Business/Blog sites. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 4 Footer Widget Areas.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: style-outlet
@@ -52,7 +52,7 @@ and Blueprint http://www.blueprintcss.org/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, ins, kbd, q, s, samp,
+del, dfn, em, font, ins, kbd, s, samp,
 small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -796,7 +796,7 @@ a {
     margin-top: 0; }
     .main-navigation ul li {
       padding: 0px; }
-    .main-navigation ul ul.sub-menu {
+    .main-navigation ul ul.sub-menu, .main-navigation ul ul.children {
       box-shadow: none;
       float: left;
       text-align: left;
@@ -806,24 +806,24 @@ a {
       z-index: 99999;
       border: 1px solid #d9d9d9;
       margin: 0; }
-      .main-navigation ul ul.sub-menu ul {
+      .main-navigation ul ul.sub-menu ul, .main-navigation ul ul.children ul {
         left: -999em;
         top: 5px;
         margin-top: 0;
         border: 1px solid #d9d9d9; }
-      .main-navigation ul ul.sub-menu li {
+      .main-navigation ul ul.sub-menu li, .main-navigation ul ul.children li {
         background-color: #fff;
         margin: 0;
         height: auto;
         float: left;
         position: relative; }
-        .main-navigation ul ul.sub-menu li:last-child a {
+        .main-navigation ul ul.sub-menu li:last-child a, .main-navigation ul ul.children li:last-child a {
           border: 0; }
-        .main-navigation ul ul.sub-menu li:hover > ul {
+        .main-navigation ul ul.sub-menu li:hover > ul, .main-navigation ul ul.children li:hover > ul {
           left: 100%; }
-        .main-navigation ul ul.sub-menu li:hover > a {
+        .main-navigation ul ul.sub-menu li:hover > a, .main-navigation ul ul.children li:hover > a {
           border-bottom-color: #605790; }
-      .main-navigation ul ul.sub-menu li a {
+      .main-navigation ul ul.sub-menu li a, .main-navigation ul ul.children li a {
         min-width: 230px;
         border-bottom: 1px solid #d9d9d9;
         height: auto;
@@ -831,9 +831,9 @@ a {
         padding: 12px 20px;
         text-transform: none;
         font-weight: 400; }
-        .main-navigation ul ul.sub-menu li a:after {
+        .main-navigation ul ul.sub-menu li a:after, .main-navigation ul ul.children li a:after {
           display: none; }
-      .main-navigation ul ul.sub-menu li :hover > a {
+      .main-navigation ul ul.sub-menu li :hover > a, .main-navigation ul ul.children li :hover > a {
         color: #605790; }
     .main-navigation ul li:hover > ul {
       left: auto; }
@@ -851,7 +851,7 @@ a {
     position: relative;
     font-weight: 600;
     font-size: 13px; }
-  .main-navigation li.menu-item-has-children a {
+  .main-navigation li.menu-item-has-children a, .main-navigation li.page_item_has_children a {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -860,7 +860,7 @@ a {
     position: relative;
     font-weight: 600;
     font-size: 13px; }
-    .main-navigation li.menu-item-has-children a:after {
+    .main-navigation li.menu-item-has-children a:after, .main-navigation li.page_item_has_children a:after {
       position: absolute;
       content: '\f0d7';
       font-family: "FontAwesome";
@@ -899,11 +899,20 @@ a {
       float: none; }
     .menu-toggle ul,
     .main-navigation.toggled ul.nav-menu ul {
-      border: 1px solid #f8f8f8; }
-      .menu-toggle ul li:hover > ul,
-      .main-navigation.toggled ul.nav-menu ul li:hover > ul {
-        right: auto;
-        left: 100%; }
+      padding-left: 10%;
+      position: static;
+      text-align: none;
+      float: none;
+      border: none; }
+      .menu-toggle ul li,
+      .main-navigation.toggled ul.nav-menu ul li {
+        background-color: transparent; }
+        .menu-toggle ul li a,
+        .main-navigation.toggled ul.nav-menu ul li a {
+          color: #fff; }
+          .menu-toggle ul li a:hover,
+          .main-navigation.toggled ul.nav-menu ul li a:hover {
+            color: #605790; }
   .main-navigation ul.nav-menu {
     display: none; } }
 
@@ -1079,7 +1088,7 @@ a.more-link {
   .navigation.pagination .prev.page-numbers, .navigation.pagination .next.page-numbers {
     padding: 8px 15px; }
 
-.sub-menu .current_page_item::before, .sub-menu .current-menu-item::before, .sub-menu .current_page_ancestor::before, .sub-menu .current-menu-parent::before {
+.sub-menu .current_page_item::before, .sub-menu .current-menu-item::before, .sub-menu .current_page_ancestor::before, .sub-menu .current-menu-parent::before, .children .current_page_item::before, .children .current-menu-item::before, .children .current_page_ancestor::before, .children .current-menu-parent::before {
   top: 0; }
 
 .branding .nav-wrap .container {
@@ -1720,13 +1729,12 @@ blockquote {
   position: relative;
   margin: 0;
   display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 30px;
   font-size: 20px;
   font-size: 2rem;
   font-family: "Roboto Slab", serif;
-  padding: 1% 10px 1% 40px;
-  border-radius: 3px; }
+  padding: 0 10px 1% 40px;
+  border-radius: 3px;
+  margin-bottom: 20px; }
   blockquote:before {
     position: absolute;
     content: "\f10d";
@@ -1734,24 +1742,19 @@ blockquote {
     font-size: 2.5rem;
     font-family: 'FontAwesome';
     left: 20px;
-    top: calc(1% + 25px);
+    top: 0;
     color: #6b6b6b; }
   blockquote p {
     margin-bottom: 0;
     font-size: 20px;
     font-size: 2rem;
-    padding: 20px;
+    padding: 5px 20px;
     color: #6b6b6b;
     position: relative;
     font-weight: 700; }
     blockquote p cite {
       font-style: normal;
-      text-transform: uppercase;
-      color: #fff; }
-    blockquote p a, blockquote p a:visited {
-      color: #fff;
-      font-size: 14px;
-      font-size: 1.4rem; }
+      text-transform: uppercase; }
     blockquote p a:hover {
       color: #6b6b6b; }
 
@@ -3334,11 +3337,7 @@ blockquote {
     .main-navigation button.menu-toggle {
       margin: 0 auto;
       font-size: 15px;
-      font-size: 1.5rem;
-      background: #222222;
-      border: 1px solid #222222; }
-      .main-navigation button.menu-toggle:hover {
-        background: #605790; }
+      font-size: 1.5rem; }
     .main-navigation .menu-all-pages-container {
       padding-top: 0; }
   .flex-recent-posts li {

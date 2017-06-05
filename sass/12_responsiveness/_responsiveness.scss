@@ -190,12 +190,7 @@
     button.menu-toggle {
       margin: 0 auto;
       @include font-size(1.5);
-      background: $secondary;
-      border: 1px solid $secondary;
-      &:hover { 
-          background: $primary;
-      }
-    } 
+   } 
     .menu-all-pages-container {
       padding-top:0;
     }   

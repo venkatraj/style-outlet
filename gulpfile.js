@@ -8,8 +8,23 @@ var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename'); 
 var cache = require('gulp-cache');
 var del = require('del');
+var wpPot = require('gulp-wp-pot'); // For generating the .pot file.
+var sort = require('gulp-sort'); // Recommended to prevent unnecessary changes in pot-file.  
+
            
-     
+/* Translate .pot file */ 
+gulp.task( 'translate', function () {   
+     return gulp.src( './**/*.php')
+       .pipe(sort())
+       .pipe(wpPot( {
+           domain        : 'style-outlet',
+           destFile      : 'style-outlet.pot',
+           package       : 'Style Outlet'
+       } ))
+      .pipe(gulp.dest('languages/style-outlet.pot'))
+});       
+ 
+    
 //Script task
 gulp.task('scripts',function(){  
    gulp.src('dist/js/*.js')
@@ -48,7 +63,7 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default',['clean'] , function() {
-  gulp.start('styles', 'images');
+  gulp.start('styles', 'images', 'translate');   
 });   
 
 
