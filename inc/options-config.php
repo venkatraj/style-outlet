@@ -160,17 +160,22 @@ function style_outlet_display_upgrade() {
         $tab = null;
     }
 
-    $current_action_link =  admin_url( 'themes.php?page=style_outlet_upgrade&tab=pro_features' ); ?>
+    $current_action_link =  admin_url( 'themes.php?page=style_outlet_upgrade&tab=pro_features' ); 
+
+    $pro_theme_url = 'https://genexthemes.com/download/styleoutletpro/';
+    $doc_url  = 'https://www.genexthemes.com/docs/free/style-outlet/';
+    $support_url = 'https://genexthemes.com/free-support-request/'; ?>
 
     <div class="style-outlet-wrapper about-wrap">
-        <h1><?php printf(esc_html__('Welcome to Style Outlet - Version %1s', 'style-outlet'), $theme_data->Version ); ?></h1>
+        <h1><?php printf(esc_html__('Welcome to %1$s - Version %2$s', 'style-outlet'), $theme_data->Name ,$theme_data->Version ); ?></h1>
         <div class="about-text"><?php esc_html_e( 'Style Outlet is Powerful multipurpose e-commerce/WooCommerce WordPress Theme. Style Outlet  is the perfect free theme for e-commerce shop. Style Outlet is responsive mobile optimized and using skeleton framework. Stylesheet is generated using SASS and so stays DRY. Best suited for Corporate/Business/Blog sites. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 4 Footer Widget Areas. ', 'style-outlet' ); ?></div>
         <a href="https://genexthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
-        <p class="upgrade-btn"><a class="upgrade" href="https://genexthemes.com/style-outlet/" target="_blank"><i class="fa fa-upload"></i><?php esc_html_e( 'Buy Style Outlet Pro', 'style-outlet' ); ?></a></p>
+        <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro', 'style-outlet'), $theme_data->Name ); ?></a></p>
 
-	   <h2 class="nav-tab-wrapper">
+	    <h2 class="nav-tab-wrapper">
 	        <a href="?page=style_outlet_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Style Outlet', 'style-outlet' ) ?></a>
 	        <a href="?page=style_outlet_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Fearures', 'style-outlet' );  ?></a>
+	        <a href="?page=style_outlet_upgrade&tab=free_vs_pro" class="nav-tab<?php echo $tab == 'free_vs_pro' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Free VS PRO', 'style-outlet' ); ?></a>
 	        <?php do_action( 'style_outlet_admin_more_tabs' ); ?>
 	    </h2>    
 
@@ -189,7 +194,7 @@ function style_outlet_display_upgrade() {
                             <h3><?php esc_html_e( 'Theme Documentation', 'style-outlet' ); ?></h3>
                             <p class="about"><?php printf(esc_html__('Need any help to setup and configure %s? Please have a look at our documentations instructions.', 'style-outlet'), $theme_data->Name); ?></p>
                             <p>
-                                <a href="<?php echo esc_url( 'https://www.genexthemes.com/docs/free/style-outlet/' ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('Style Outlet Documentation', 'style-outlet'); ?></a>
+                                 <a href="<?php echo esc_url($doc_url); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('Documentation', 'style-outlet'); ?></a>
                             </p>
                             <?php do_action( 'style_outlet_dashboard_theme_links' ); ?>
                         </div>  
@@ -197,7 +202,7 @@ function style_outlet_display_upgrade() {
                             <h3><?php esc_html_e( 'Having Trouble, Need Support?', 'style-outlet' ); ?></h3>
                             <p class="about"><?php printf(esc_html__('Support for %s WordPress theme is conducted through Webulous free support ticket system.', 'style-outlet'), $theme_data->Name); ?></p>
                             <p>  
-                                <a href="<?php echo esc_url('https://genexthemes.com/free-support-request/' ); ?>" target="_blank" class="button button-secondary"><?php echo sprintf( esc_html('Create a support ticket', 'style-outlet'), $theme_data->Name); ?></a>
+                                <a href="<?php echo esc_url($support_url); ?>"  target="_blank" class="button button-secondary"><?php echo sprintf( esc_html('Create a support ticket', 'style-outlet'), $theme_data->Name); ?></a>
                             </p>
                         </div>   
                        
@@ -215,8 +220,114 @@ function style_outlet_display_upgrade() {
 			    global $style_outlet_why_upgrade; ?>
 				<div class="wrap clearfix">
 				    <?php echo $style_outlet_why_upgrade; ?>
-				</div><?php 
+				</div>
+			</div><?php 
 		} ?>
+   
+       <!-- Free VS PRO tab -->
+        <?php if ( $tab == 'free_vs_pro' ) { ?>
+            <div class="free-vs-pro-tab info-tab-content">
+	            <div id="free_pro">
+	                <table class="free-pro-table">
+		                <thead>
+			                <tr>
+			                    <th></th>
+			                    <th><?php echo $theme_data->Name; ?> Lite</th>
+			                    <th><?php echo $theme_data->Name; ?> PRO</th>
+			                </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <td><h3><?php _e('Flex Slider', 'style-outlet'); ?></h3></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                        <td><h3><?php _e('Support', 'style-outlet'); ?></h3></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                        <td><h3><?php _e('Responsive Design', 'style-outlet'); ?></h3></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                        <td><h3><?php _e('Custom Logo Option', 'style-outlet'); ?></h3></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                        <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                         <td><h3><?php _e('Social Links', 'style-outlet'); ?></h3></td>
+		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                    	 <td><h3><?php _e('Unlimited color option', 'style-outlet'); ?></h3></td>
+		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                    	 <td><h3><?php _e('Elastic Slider', 'style-outlet'); ?></h3></td>
+		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	 <td><h3><?php _e('Page Builder Support', 'style-outlet');?></h3></td>
+		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	 <td><h3><?php _e('Page Templates', 'style-outlet');?></h3></td>
+		                    	 <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	 <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                    	<td><h3><?php _e('Google Map', 'style-outlet');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    <tr>
+		                    	<td><h3><?php _e('Demo Content', 'style-outlet');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Polylang Compatible', 'style-outlet');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Multiple Portfolio Layouts', 'style-outlet');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Multiple Blog Layouts', 'style-outlet');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Page Animation', 'style-outlet');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                     <tr>
+		                    	<td><h3><?php _e('Unlimited Sidebar', 'style-outlet');?></h3></td>
+		                    	<td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                    	<td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                    </tr>
+		                    
+		                    <tr class="ti-about-page-text-center">
+		                        <td></td>
+		                    	<td colspan="2"><a href="<?php echo esc_url($pro_theme_url); ?>" target="_blank" class="button button-primary button-hero"><?php printf( __( 'Buy %1s Pro', 'style-outlet'), $theme_data->Name ); ?></a></td>
+		                    </tr>
+		                </tbody>
+	                </table>			    
+				</div>
+			</div><?php 
+		} ?>
+
     </div><?php
 }
 
@@ -339,7 +450,7 @@ function style_outlet_display_upgrade() {
 							'enable_service_section' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Home page Service Section Discount Offer', 'style-outlet'),
-                                'default' =>0,
+                                'default' => 1,
 								'sanitize_callback' => 'absint',
                             ),
 							'service-1'  => array(

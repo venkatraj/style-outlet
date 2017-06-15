@@ -82,6 +82,149 @@ function style_outlet_setup() {
 	*/
 	add_theme_support( 'custom-logo' );
 
+    // Define and register starter content to showcase the theme on new sites.
+	$starter_content = array(
+		'widgets' => array(
+		
+			'top-left' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'text'  => '<ul><li><a href="#"><i class="fa fa-envelope"></i>Email:info@gmail.com</a></li></ul>'
+					)
+				)
+			),
+
+			// Put two core-defined widgets in the footer 2 area.
+			'top-right' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'text'  => '<ul><li><a href="#">Login / Register</a></li><li><a href="#">Cart</a></li><li><a href="#">My Account</a></li></ul>'
+					)
+				),
+			),
+
+			'footer' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'title' => 'About Theme',
+					  'text'  => 'Style Outlet Theme elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website.'
+					),
+				)
+			),
+			'footer-2' => array(
+				// Widget ID
+			    'archives',
+			),
+			'footer-3' => array(
+				// Widget ID
+			    'categories'
+			),
+
+			'footer-4' => array(
+				'recent-posts',
+			),
+
+			'footer-nav' => array(
+				// Widget ID
+			    'my_text' => array(
+					// Widget $id -> set when creating a Widget Class
+		        	'text' , 
+		        	// Widget $instance -> settings 
+					array(
+					  'text'  => '<ul><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a href=""><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-pinterest"></i></a></li></ul>'
+					)
+				)
+			),
+
+		),
+
+		// Specify the core-defined pages to create and add custom thumbnails to some of them.
+		'posts' => array(
+			'home' => array(
+				'post_type' => 'page',
+			),
+			'blog' => array(
+				'post_type' => 'page',
+			),
+			'lawyer-one' => array(
+	            'post_type' => 'post',
+	            'post_title' => __( 'Post One', 'style-outlet'),
+	            'post_content' => __( '<h3>We are starting our business</h3><h1>Realize your goal Here</h1><a href="#">GET THE THEME</a>', 'style-outlet'),
+	            'thumbnail' => '{{post-featured-image}}',
+	        ),
+	        'lawyer-two' => array(
+	            'post_type' => 'post',
+	            'post_title' => __( 'Post Two', 'style-outlet'),
+	            'post_content' => __( '<h3>We are starting our business</h3><h1>Realize your goal Here</h1><a href="#">GET THE THEME</a>', 'style-outlet'),
+	            'thumbnail' => '{{post-featured-image}}',
+	        ), 
+			'service-one' => array(  
+				'post_type' => 'page',
+				'post_title' => __( 'For Men', 'style-outlet'),
+	            'post_content' => __( 'Collection<br><a href="#">Up-to 50 Off </a>', 'style-outlet'),
+				'thumbnail' => '{{page-images}}',
+			),
+			'service-two' => array(
+				'post_type' => 'page',
+				'post_title' => __( 'For Child', 'style-outlet'),
+	            'post_content' => __( 'Collection<br><a href="#">Up-to 50 Off </a>', 'style-outlet'),
+				'thumbnail' => '{{page-images}}',
+			),
+			'service-three' => array(
+				'post_type' => 'page',
+				'post_title' => __( 'For Women', 'style-outlet'),
+	            'post_content' => __( 'Collection<br><a href="#">Up-to 50 Off </a>', 'style-outlet'),
+				'thumbnail' => '{{page-images}}',
+			),
+			
+		),
+
+		// Create the custom image attachments used as post thumbnails for pages.
+		'attachments' => array(
+			'post-featured-image' => array( 
+				'post_title' => __( 'slider one', 'style-outlet' ),
+				'file' => 'images/slider.png', // URL relative to the template directory.
+			),
+			'page-images' => array(
+				'post_title' => __( 'Page Images', 'style-outlet' ),
+				'file' => 'images/page.png', // URL relative to the template directory.
+			),
+		),
+
+		// Default to a static front page and assign the front and posts pages.
+		'options' => array(
+			'show_on_front' => 'page',
+			'page_on_front' => '{{home}}',
+			'page_for_posts' => '{{blog}}',
+		),  
+
+		// Set the front page section theme mods to the IDs of the core-registered pages.
+		'theme_mods' => array( 
+			'slider_cat' => '1', 
+			'service-1' => '{{service-one}}',
+			'service-2' => '{{service-two}}',
+			'service-3' => '{{service-three}}',
+			'enable_service_section' => true
+		),
+
+	);
+
+	$starter_content = apply_filters( 'style_outlet_starter_content', $starter_content );
+
+	add_theme_support( 'starter-content', $starter_content );
+
 }
 endif;
 add_action( 'after_setup_theme', 'style_outlet_setup' );
@@ -141,7 +284,7 @@ function style_outlet_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
-
+ 
 	register_sidebar( array(
 		'name'          => __( 'Footer Nav', 'style-outlet' ),
 		'id'            => 'footer-nav',

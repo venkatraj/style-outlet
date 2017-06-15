@@ -1,3 +1,53 @@
+/* free vs pro table */
+
+#free_pro .free-pro-table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+#free_pro .free-pro-table th {
+  padding-bottom: 20px;
+}
+
+#free_pro .free-pro-table td {
+  border-top: 1px solid #ccc;
+  padding: 20px 0 25px;
+}
+
+#free_pro .free-pro-table h3{
+  margin: 0;
+}
+
+#free_pro .free-pro-table td p {
+  margin: 0;
+}
+
+#free_pro .free-pro-table .only-lite,
+#free_pro .free-pro-table .only-pro {
+  text-align: center;
+  width: 15%;
+}
+
+#free_pro .free-pro-table .only-lite .dashicons-before:before {
+  color: #00A878;
+}
+
+#free_pro .free-pro-table .only-pro .dashicons-before:before {
+  color: #ff3439;
+}
+
+#free_pro .free-pro-table .only-lite .dashicons-before:before,
+#free_pro .free-pro-table .only-pro .dashicons-before:before {
+  font-size: 35px;
+  height: 35px;
+  width: 35px;
+}
+
+#free_pro .ti-about-page-text-center {
+  text-align: center;
+}
+
+
 a[href="themes.php?page=style_outlet_upgrade"] {
   font-weight: 700!important; 
 } 
@@ -123,27 +173,16 @@ a[href="themes.php?page=style_outlet_upgrade"] {
   float: right;
   display: block;
   text-decoration: none;
-  padding-right: 10px;
-  font-size: 14px;
-  border: 5px solid #d7d7d7;
-  border-radius: 3px;
+  padding: 10px 25px; 
+  font-size: 16px;
+  border-radius: 2px;
   font-weight: bold;
-  }
-  .upgrade-btn .upgrade i {
-    padding: 10px 15px;
-    font-size: 1.2em;
-    display: inline-block;
-    line-height: 25px; }
+  background-color: #b4161c;
+  color: white;
+}
 
-.upgrade-btn .upgrade {
-  background-color: #f05151;
-  color: white; }
-  .upgrade-btn .upgrade i {
-    background-color: #d53f3f;
-    font-size: 1.2em; }
   .upgrade-btn .upgrade:hover {
-    background-color: #d53f3f; }
-
+    background-color: #000; }
 
 .wrap .one-third.column {
   border: 2px solid #d7d7d7;

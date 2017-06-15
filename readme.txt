@@ -2,8 +2,8 @@
 Contributors: Genex
 Tags: e-commerce, blog, custom-menu, custom-background, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns
 Requires at least: 4.0
-Tested up to: 4.7.5
-Stable tag: 1.0.2
+Tested up to: 4.8
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,12 +51,12 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
-= 1.0.2 =
+= 1.0.3 =
 * Initial Release
 
 == Upgrade Notice ==
 
-= 1.0.2 =
+= 1.0.3 =
 * Initial Release
 
 == Resources ==
