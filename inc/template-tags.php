@@ -199,63 +199,6 @@ if ( ! function_exists( 'style_outlet_post_nav' ) ) :
 	}
 endif;
 
-// Recent Posts with featured Images to be displayed on home page
-/*if( ! function_exists('style_outlet_recent_posts') ) { 
-	function style_outlet_recent_posts() {      
-		$output = '';
-		$posts_per_page  = get_theme_mod('recent_posts_count', 6 );
-		// WP_Query arguments
-		$args = array (  
-			'post_type'              => 'post',
-			'post_status'            => 'publish',   
-			'posts_per_page'         => intval($posts_per_page),
-			'ignore_sticky_posts'    => true,
-			'order'                  => 'DESC',
-		);
-
-		// The Query
-		$query = new WP_Query( $args );
-
-		// The Loop
-		if ( $query->have_posts() ) {
-			$output .= '<div class="post-wrapper">';  
-			$output .= '<div class="container">';  
-			$output .= '<h1 class="title-divider">' . apply_filters('style_outlet_post_title',__('Recent Blogs','style-outlet') ) . '</h1>';
-			$output .= '<div class="latest-posts">';
-			while ( $query->have_posts() ) {
-				$query->the_post();
-				$output .= '<div class="one-third column">';
-				$output .= '<div class="latest-post">';
-						$output .= '<div class="latest-post-thumb">'; 
-								if ( has_post_thumbnail() ) {
-									$output .= get_the_post_thumbnail($query->post->ID ,'style_outlet_recent_posts_img');
-								}
-								else {
-									$output .= '<img src="' . esc_url(get_stylesheet_directory_uri()) . '/images/no-image.png" alt="" >';
-								}
-							$output .= '</div><!-- .latest-post-thumb -->';
-					    $output .= '<h3><a href="'. esc_url(get_permalink()) . '">' . get_the_title() . '</a></h3>';
-						$output .= '<div class="latest-post-content">';
-						$output .= '<p>' . get_the_content() . '</p>';
-						$output .='<div class="entry-meta">';
-							$output .='<span class="data-structure"><span class="dd"><i class="fa fa-calendar"></i>' .  get_the_time(get_option('date_format')).'</span></span>';
-						$output .='</div><!-- entry-meta -->';
-					$output .= '</div><!-- .latest-post-content -->';
-					$output .= '</div>';
-				$output .= '</div><!-- .latest-post -->';
-			}
-			$output .= '</div><!-- latest post end -->';
-			$output .= '</div><!-- container close -->';
-			$output .= '</div><!-- .post-wrapper -->';
-		} 
-		$query = null;
-		// Restore original Post Data
-		wp_reset_postdata();
-		echo $output;
-	}
-}*/
-
-
 add_action('style_outlet_action_before_content','style_outlet_add_featured_slider');
 if( ! function_exists ( 'style_outlet_add_featured_slider' )  ) {
 	function style_outlet_add_featured_slider() {

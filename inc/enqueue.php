@@ -45,6 +45,7 @@ function style_outlet_theme_font_url($font) {
 
 
 function style_outlet_admin_enqueue_scripts( $hook ) {  
+	if( strpos($hook, 'style_outlet_upgrade') ) {
 		wp_enqueue_style( 
 			'font-awesome', 
 			get_template_directory_uri() . '/css/font-awesome.min.css', 
@@ -58,6 +59,7 @@ function style_outlet_admin_enqueue_scripts( $hook ) {
 			array(), 
 			'1.0.0', 
 			'all' 
-		); 
+		);
+	} 
 }
 add_action( 'admin_enqueue_scripts', 'style_outlet_admin_enqueue_scripts' );

@@ -76,6 +76,9 @@ function style_outlet_setup() {
 
 	/* Woocommerce support */
     add_theme_support('woocommerce');
+    add_theme_support( 'wc-product-gallery-zoom' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' ); 
 
     /* 
 	* Custom Logo 
@@ -118,8 +121,8 @@ function style_outlet_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'title' => 'About Theme',
-					  'text'  => 'Style Outlet Theme elegant and robustly built WordPress theme for lawyers, Law Firm and Attorney website.'
+					  'title' => __('About Theme','style-outlet'),
+					  'text'  => __('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.','style-outlet'),
 					),
 				)
 			),
@@ -143,7 +146,7 @@ function style_outlet_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => '<ul><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a href=""><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-pinterest"></i></a></li></ul>'
+					  'text'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a></li><li><a href="#"><i class="fa fa-twitter"></i></a></li><li><a href="#"><i class="fa fa-pinterest"></i></a></li></ul>'
 					)
 				)
 			),
@@ -158,13 +161,13 @@ function style_outlet_setup() {
 			'blog' => array(
 				'post_type' => 'page',
 			),
-			'lawyer-one' => array(
+			'post-one' => array(
 	            'post_type' => 'post',
 	            'post_title' => __( 'Post One', 'style-outlet'),
 	            'post_content' => __( '<h3>We are starting our business</h3><h1>Realize your goal Here</h1><a href="#">GET THE THEME</a>', 'style-outlet'),
 	            'thumbnail' => '{{post-featured-image}}',
 	        ),
-	        'lawyer-two' => array(
+	        'post-two' => array(
 	            'post_type' => 'post',
 	            'post_title' => __( 'Post Two', 'style-outlet'),
 	            'post_content' => __( '<h3>We are starting our business</h3><h1>Realize your goal Here</h1><a href="#">GET THE THEME</a>', 'style-outlet'),
@@ -239,7 +242,7 @@ add_action( 'after_setup_theme', 'style_outlet_setup' );
 function style_outlet_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'style_outlet_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'style_outlet_content_width', 0 );
+add_action( 'after_setup_theme', 'style_outlet_content_width' );
 
 /**
  * Register widget area.
@@ -346,7 +349,7 @@ function style_outlet_header_add_to_cart_fragment( $fragments ) {
     global $woocommerce; 
     ob_start(); ?>
 
-    <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'style-outlet'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'style-outlet'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
+    <a class="cart-contents" href="<?php echo esc_url($woocommerce->cart->get_cart_url()); ?>" title="<?php esc_attr_e('View your shopping cart', 'style-outlet'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'style-outlet'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
 
     <?php $fragments['a.cart-contents'] = ob_get_clean();
 

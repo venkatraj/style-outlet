@@ -84,5 +84,8 @@
 		</div>  
 	</header><!-- #masthead -->
 
-
+ 
+<?php  if( is_front_page() && !is_home() ) { 
+     do_action( 'style_outlet_action_before_content' );
+}     
 

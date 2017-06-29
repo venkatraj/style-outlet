@@ -56,31 +56,75 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:108
+#: functions.php:124
+msgid "About Theme"
+msgstr ""
+
+#: functions.php:125
+msgid "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+msgstr ""
+
+#: functions.php:166
+msgid "Post One"
+msgstr ""
+
+#: functions.php:167, functions.php:173
+msgid "<h3>We are starting our business</h3><h1>Realize your goal Here</h1><a href=\"#\">GET THE THEME</a>"
+msgstr ""
+
+#: functions.php:172
+msgid "Post Two"
+msgstr ""
+
+#: functions.php:178
+msgid "For Men"
+msgstr ""
+
+#: functions.php:179, functions.php:185, functions.php:191
+msgid "Collection<br><a href=\"#\">Up-to 50 Off </a>"
+msgstr ""
+
+#: functions.php:184
+msgid "For Child"
+msgstr ""
+
+#: functions.php:190
+msgid "For Women"
+msgstr ""
+
+#: functions.php:200
+msgid "slider one"
+msgstr ""
+
+#: functions.php:204
+msgid "Page Images"
+msgstr ""
+
+#: functions.php:254
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:117
+#: functions.php:263
 msgid "Top Left"
 msgstr ""
 
-#: functions.php:126
+#: functions.php:272
 msgid "Top Right"
 msgstr ""
 
-#: functions.php:136
+#: functions.php:282
 msgid "Footer %d"
 msgstr ""
 
-#: functions.php:146
+#: functions.php:292
 msgid "Footer Nav"
 msgstr ""
 
-#: functions.php:206, header.php:69
+#: functions.php:352, header.php:69
 msgid "View your shopping cart"
 msgstr ""
 
-#: functions.php:206, header.php:70
+#: functions.php:352, header.php:70
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
@@ -487,7 +531,7 @@ msgstr ""
 msgid "Theme offers many different page layouts so you can quickly and easily create your pages with no hassle!"
 msgstr ""
 
-#: inc/options-config.php:6
+#: inc/options-config.php:6, inc/options-config.php:316
 msgid "Unlimited Sidebar"
 msgstr ""
 
@@ -583,7 +627,7 @@ msgstr ""
 msgid "Want your users to stay in touch? No problem, Theme has Social Media icons all throughout the theme!"
 msgstr ""
 
-#: inc/options-config.php:30
+#: inc/options-config.php:30, inc/options-config.php:286
 msgid "Google Map"
 msgstr ""
 
@@ -623,7 +667,7 @@ msgstr ""
 msgid "Upgrade To Pro"
 msgstr ""
 
-#: inc/options-config.php:138, inc/options-config.php:172
+#: inc/options-config.php:138, inc/options-config.php:176
 msgid "Style Outlet"
 msgstr ""
 
@@ -631,219 +675,295 @@ msgstr ""
 msgid "Upgrade To Style Outlet Pro"
 msgstr ""
 
-#: inc/options-config.php:166
-msgid "Welcome to Style Outlet - Version %1s"
+#: inc/options-config.php:170
+msgid "Welcome to %1$s - Version %2$s"
 msgstr ""
 
-#: inc/options-config.php:167
+#: inc/options-config.php:171
 msgid "Style Outlet is Powerful multipurpose e-commerce/WooCommerce WordPress Theme. Style Outlet  is the perfect free theme for e-commerce shop. Style Outlet is responsive mobile optimized and using skeleton framework. Stylesheet is generated using SASS and so stays DRY. Best suited for Corporate/Business/Blog sites. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 4 Footer Widget Areas. "
 msgstr ""
 
-#: inc/options-config.php:169
-msgid "Buy Style Outlet Pro"
+#: inc/options-config.php:173, inc/options-config.php:323
+msgid "Buy %1s Pro"
 msgstr ""
 
-#: inc/options-config.php:173
+#: inc/options-config.php:177
 msgid "PRO Fearures"
 msgstr ""
 
-#: inc/options-config.php:182
+#: inc/options-config.php:178
+msgid "Free VS PRO"
+msgstr ""
+
+#: inc/options-config.php:187
 msgid "Theme Customizer"
 msgstr ""
 
-#: inc/options-config.php:183
+#: inc/options-config.php:188
 msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
 msgstr ""
 
-#: inc/options-config.php:185
+#: inc/options-config.php:190
 msgid "Start Customize"
 msgstr ""
 
-#: inc/options-config.php:189
+#: inc/options-config.php:194
 msgid "Theme Documentation"
 msgstr ""
 
-#: inc/options-config.php:190
+#: inc/options-config.php:195
 msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
 msgstr ""
 
-#: inc/options-config.php:192
-msgid "Style Outlet Documentation"
+#: inc/options-config.php:197
+msgid "Documentation"
 msgstr ""
 
-#: inc/options-config.php:197
+#: inc/options-config.php:202
 msgid "Having Trouble, Need Support?"
 msgstr ""
 
-#: inc/options-config.php:198
+#: inc/options-config.php:203
 msgid "Support for %s WordPress theme is conducted through Webulous free support ticket system."
 msgstr ""
 
-#: inc/options-config.php:229, inc/options-config.php:230
-msgid "Theme Options"
+#: inc/options-config.php:241
+msgid "Flex Slider"
 msgstr ""
 
-#: inc/options-config.php:233
-msgid "General"
+#: inc/options-config.php:246
+msgid "Support"
 msgstr ""
 
-#: inc/options-config.php:234
-msgid "General settings that affects overall site"
-msgstr ""
-
-#: inc/options-config.php:238
-msgid "Enable Breadcrumb"
-msgstr ""
-
-#: inc/options-config.php:244
-msgid "Select Breadcrumb Character"
-msgstr ""
-
-#: inc/options-config.php:255
-msgid "Enable Numeric Page Navigation"
+#: inc/options-config.php:251
+msgid "Responsive Design"
 msgstr ""
 
 #: inc/options-config.php:256
-msgid "Check to display numeric page navigation, instead of Previous Posts / Next Posts links."
+msgid "Custom Logo Option"
 msgstr ""
 
-#: inc/options-config.php:262
-msgid "Website Layout Options"
-msgstr ""
-
-#: inc/options-config.php:263
-msgid "Select main content and sidebar alignment."
-msgstr ""
-
-#: inc/options-config.php:265
-msgid "Sidebar Left"
+#: inc/options-config.php:261
+msgid "Social Links"
 msgstr ""
 
 #: inc/options-config.php:266
-msgid "Sidebar Right"
+msgid "Unlimited color option"
 msgstr ""
 
-#: inc/options-config.php:267
-msgid "Full Width"
-msgstr ""
-
-#: inc/options-config.php:268
-msgid "No Sidebar"
+#: inc/options-config.php:271
+msgid "Elastic Slider"
 msgstr ""
 
 #: inc/options-config.php:276
-msgid "Header"
-msgstr ""
-
-#: inc/options-config.php:277
-msgid "Header options"
+msgid "Page Builder Support"
 msgstr ""
 
 #: inc/options-config.php:281
-msgid "Logo as Title"
+msgid "Page Templates"
 msgstr ""
 
-#: inc/options-config.php:287
-msgid "Show site Tagline"
+#: inc/options-config.php:291
+msgid "Demo Content"
+msgstr ""
+
+#: inc/options-config.php:296
+msgid "Polylang Compatible"
 msgstr ""
 
 #: inc/options-config.php:301
-msgid "Footer"
-msgstr ""
-
-#: inc/options-config.php:302
-msgid "Footer related options"
+msgid "Multiple Portfolio Layouts"
 msgstr ""
 
 #: inc/options-config.php:306
+msgid "Multiple Blog Layouts"
+msgstr ""
+
+#: inc/options-config.php:311
+msgid "Page Animation"
+msgstr ""
+
+#: inc/options-config.php:340, inc/options-config.php:341
+msgid "Theme Options"
+msgstr ""
+
+#: inc/options-config.php:344
+msgid "General"
+msgstr ""
+
+#: inc/options-config.php:345
+msgid "General settings that affects overall site"
+msgstr ""
+
+#: inc/options-config.php:349
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: inc/options-config.php:355
+msgid "Select Breadcrumb Character"
+msgstr ""
+
+#: inc/options-config.php:366
+msgid "Enable Numeric Page Navigation"
+msgstr ""
+
+#: inc/options-config.php:367
+msgid "Check to display numeric page navigation, instead of Previous Posts / Next Posts links."
+msgstr ""
+
+#: inc/options-config.php:373
+msgid "Website Layout Options"
+msgstr ""
+
+#: inc/options-config.php:374
+msgid "Select main content and sidebar alignment."
+msgstr ""
+
+#: inc/options-config.php:376
+msgid "Sidebar Left"
+msgstr ""
+
+#: inc/options-config.php:377
+msgid "Sidebar Right"
+msgstr ""
+
+#: inc/options-config.php:378
+msgid "Full Width"
+msgstr ""
+
+#: inc/options-config.php:379
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/options-config.php:387
+msgid "Header"
+msgstr ""
+
+#: inc/options-config.php:388
+msgid "Header options"
+msgstr ""
+
+#: inc/options-config.php:392
+msgid "Logo as Title"
+msgstr ""
+
+#: inc/options-config.php:398
+msgid "Show site Tagline"
+msgstr ""
+
+#: inc/options-config.php:412
+msgid "Footer"
+msgstr ""
+
+#: inc/options-config.php:413
+msgid "Footer related options"
+msgstr ""
+
+#: inc/options-config.php:417
 msgid "Footer Widget Area"
 msgstr ""
 
-#: inc/options-config.php:312
+#: inc/options-config.php:423
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: inc/options-config.php:313
+#: inc/options-config.php:424
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: inc/options-config.php:319
+#: inc/options-config.php:430
 msgid "Home"
 msgstr ""
 
-#: inc/options-config.php:320
+#: inc/options-config.php:431
 msgid "Home Page options"
 msgstr ""
 
-#: inc/options-config.php:324
+#: inc/options-config.php:435
 msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: inc/options-config.php:330
+#: inc/options-config.php:441
 msgid "Slider Posts Category"
 msgstr ""
 
-#: inc/options-config.php:335
+#: inc/options-config.php:446
 msgid "No. of Sliders"
 msgstr ""
 
-#: inc/options-config.php:341
+#: inc/options-config.php:452
 msgid "Enable Home page Service Section Discount Offer"
 msgstr ""
 
-#: inc/options-config.php:347, inc/options-config.php:352, inc/options-config.php:357
+#: inc/options-config.php:458, inc/options-config.php:463, inc/options-config.php:468
 msgid "Select the page to display Service Offer"
 msgstr ""
 
-#: inc/options-config.php:370
+#: inc/options-config.php:481
 msgid "Blog"
 msgstr ""
 
-#: inc/options-config.php:371
+#: inc/options-config.php:482
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: inc/options-config.php:375
+#: inc/options-config.php:486
 msgid "Enable Featured Image"
 msgstr ""
 
-#: inc/options-config.php:381
+#: inc/options-config.php:492
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: inc/options-config.php:391
+#: inc/options-config.php:494, inc/options-config.php:510
+msgid "Large Featured Image"
+msgstr ""
+
+#: inc/options-config.php:495, inc/options-config.php:511
+msgid "Small Featured Image"
+msgstr ""
+
+#: inc/options-config.php:502
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: inc/options-config.php:397
+#: inc/options-config.php:508
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: inc/options-config.php:407
+#: inc/options-config.php:518
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: inc/options-config.php:408
+#: inc/options-config.php:519
 msgid "Show Author information box below single post."
 msgstr ""
 
-#: inc/options-config.php:414
+#: inc/options-config.php:525
 msgid "Show Related posts"
 msgstr ""
 
-#: inc/options-config.php:415
+#: inc/options-config.php:526
 msgid "Show related posts."
 msgstr ""
 
-#: inc/options-config.php:421
+#: inc/options-config.php:532
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/options-config.php:431
+#: inc/options-config.php:534
+msgid "Related Posts By Tags"
+msgstr ""
+
+#: inc/options-config.php:535
+msgid "Related Posts By Categories"
+msgstr ""
+
+#: inc/options-config.php:542
 msgid " Show Comments"
 msgstr ""
 
-#: inc/options-config.php:432
+#: inc/options-config.php:543
 msgid "Show Comments"
 msgstr ""
 
@@ -913,63 +1033,63 @@ msgctxt "Next post link"
 msgid "%title&nbsp;<span class=\"meta-nav\"><i class=\"fa fa-angle-right\"></i></span>"
 msgstr ""
 
-#: inc/template-tags.php:285, template-parts/content.php:48
+#: inc/template-tags.php:228, template-parts/content.php:48
 msgid "Read More"
 msgstr ""
 
-#: inc/template-tags.php:374
+#: inc/template-tags.php:317
 msgid "<i class=\"fa fa-home\"></i>"
 msgstr ""
 
-#: inc/template-tags.php:375
+#: inc/template-tags.php:318
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: inc/template-tags.php:376
+#: inc/template-tags.php:319
 msgid "Search Results for \"%s\" Query"
 msgstr ""
 
-#: inc/template-tags.php:377
+#: inc/template-tags.php:320
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: inc/template-tags.php:378
+#: inc/template-tags.php:321
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: inc/template-tags.php:379
+#: inc/template-tags.php:322
 msgid "Error 404"
 msgstr ""
 
-#: inc/template-tags.php:432, inc/template-tags.php:432, inc/template-tags.php:433, inc/template-tags.php:437, inc/template-tags.php:437, inc/template-tags.php:441
+#: inc/template-tags.php:375, inc/template-tags.php:375, inc/template-tags.php:376, inc/template-tags.php:380, inc/template-tags.php:380, inc/template-tags.php:384
 msgid "Y"
 msgstr ""
 
-#: inc/template-tags.php:433
+#: inc/template-tags.php:376
 msgid "m"
 msgstr ""
 
-#: inc/template-tags.php:433, inc/template-tags.php:438
+#: inc/template-tags.php:376, inc/template-tags.php:381
 msgid "F"
 msgstr ""
 
-#: inc/template-tags.php:434
+#: inc/template-tags.php:377
 msgid "d"
 msgstr ""
 
-#: inc/template-tags.php:504
+#: inc/template-tags.php:447
 msgid "Page"
 msgstr ""
 
-#: inc/template-tags.php:560, inc/template-tags.php:563
+#: inc/template-tags.php:503, inc/template-tags.php:506
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: inc/template-tags.php:591
+#: inc/template-tags.php:534
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: inc/template-tags.php:592
+#: inc/template-tags.php:535
 msgid "Get started with Style Outlet"
 msgstr ""
 
