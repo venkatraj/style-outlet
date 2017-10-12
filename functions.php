@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Style Outlet functions and definitions
  *

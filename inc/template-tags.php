@@ -215,7 +215,7 @@ if( ! function_exists ( 'style_outlet_add_featured_slider' )  ) {
 		if ( $slider_cat ) { 
 			$query = new WP_Query($slider_posts);        
 			if( $query->have_posts()) : ?>
-				<div class="flexslider">  
+				<div class="flexslider free-flex">  
 					<ul class="slides">
 						<?php while($query->have_posts()) :
 								$query->the_post();
