@@ -412,10 +412,16 @@ function style_outlet_display_upgrade() {
 						'title' => __('Footer', 'style-outlet'),
 						'description' => __('Footer related options', 'style-outlet'),
 						'fields' => array(
-							'footer_widgets' => array(
+							'footer_widgets' => array( 
 								'type' => 'checkbox',
 								'label' => __('Footer Widget Area', 'style-outlet'),
 								'default' => 1,
+								'sanitize_callback' => 'style_outlet_boolean',
+							),
+							'scroll_to_top' => array(
+								'type' => 'checkbox',
+								'label' => __('Enable Scroll To Top', 'style-outlet'),
+								'default' => 0,
 								'sanitize_callback' => 'style_outlet_boolean',
 							),
 							'copyright' => array(
@@ -476,7 +482,6 @@ function style_outlet_display_upgrade() {
                             ),*/
 						),
 					),
-
 					'blog' => array(
 						'title' => __('Blog', 'style-outlet'),
 						'description' => __('Blog Related Posts options', 'style-outlet'),
@@ -491,62 +496,94 @@ function style_outlet_display_upgrade() {
                                 'type' => 'radio',
                                 'label' => __('Choose the featured image display type for Blog Page ', 'style-outlet'),
                                 'choices' => array(
-                                    '1' =>  __('Large Featured Image','style-outlet'),
-                                    '2' =>  __('Small Featured Image','style-outlet'),        
+                                    '1' => __('Large Featured Image', 'style-outlet'),
+                                    '2' => __('Small Featured Image', 'style-outlet'),        
                                 ),
-                                'default' => '1',  
-                                'sanitize_callback' =>'absint',    
+                                'default' => '1', 
+                                'sanitize_callback' => 'absint',
                             ),
+						),
+					),
+					'single_blog' => array(
+						'title' => __('Single Blog', 'style-outlet'),
+						'description' => __('Single Blog page Related Posts options', 'style-outlet'),
+						'fields' => array(
 							'single_featured_image' => array(
 								'type' => 'checkbox',
 								'label' => __('Enable Single Post Featured Image', 'style-outlet'),
 								'default' => 1,
 								'sanitize_callback' => 'style_outlet_boolean',
 							),
-                            'single_featured_image_size' => array(
-                                'type' => 'radio',
-                                'label' => __('Choose the featured image display type for Single Page ', 'style-outlet'),
-                                'choices' => array(
-                                    '1' => __('Large Featured Image', 'style-outlet'),
-                                    '2' => __('Small Featured Image', 'style-outlet'),      
-                                ),
-                                'default' => '1',
-                                'sanitize_callback' =>'absint',   
-                            ),
-                             'author_bio_box' => array(
-                                'type' => 'checkbox',
-                                'label' => __(' Enable Author Bio Box below single post', 'style-outlet'),
-                                'description' => __('Show Author information box below single post.', 'style-outlet'),
-                                'default' => 0, 
-                                'sanitize_callback' => 'style_outlet_boolean', 
-                            ),
-                            'related_posts' => array(
-                                'type' => 'checkbox',
-                                'label' => __('Show Related posts', 'style-outlet'),
-                                'description' => __('Show related posts.', 'style-outlet'),
-                                'default' => 0,  
-                                'sanitize_callback' => 'style_outlet_boolean',
-                            ),
-                            'related_posts_hierarchy' => array(
-                                'type' => 'radio',
-                                'label' => __('Related Posts Must Be Shown As:', 'style-outlet'),
-                                'choices' => array(
-                                    '1' => __('Related Posts By Tags','style-outlet'),
-                                    '2' => __('Related Posts By Categories','style-outlet'),     
-                                ),
-                               'default' => '1',
-                               'sanitize_callback' =>'absint',     
-                            ),
-                            'comments' => array(
-                                'type' => 'checkbox',
-                                'label' => __(' Show Comments', 'style-outlet'),
-                                'description' => __('Show Comments', 'style-outlet'),
-                                'default' => 1, 
-                                'sanitize_callback' => 'style_outlet_boolean', 
-                            ),
+							'single_featured_image_size' => array(
+								'type' => 'radio',
+								'label' => __('Choose the featured image display type for Single Page ', 'style-outlet'),
+								'choices' => array(
+									'1' => __('Large Featured Image', 'style-outlet'),
+									'2' => __('Small Featured Image', 'style-outlet'),       
+								),
+								'default' => '1', 
+								'sanitize_callback' => 'absint',  
+							),
+							'social_sharing_box' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Social Sharing Box below single post', 'style-outlet'),
+								'default' => 0,
+								'sanitize_callback' => 'style_outlet_boolean',    
+							),
+							'facebook_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Facebook Sharing option below single post', 'style-outlet'),
+								'default' => 0,
+								'sanitize_callback' => 'style_outlet_boolean',    
+							),
+							'twitter_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Twitter Sharing option below single post', 'style-outlet'),
+								'default' => 0,
+								'sanitize_callback' => 'style_outlet_boolean',    
+							),
+							'linkedin_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Linkedin Sharing option below single post', 'style-outlet'),
+								'default' => 0,
+								'sanitize_callback' => 'style_outlet_boolean',    
+							),
+							'google-plus_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Google Plus Sharing option below single post', 'style-outlet'),
+								'default' => 0,
+								'sanitize_callback' => 'style_outlet_boolean',    
+							),
+							'email_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Email Sharing option below single post', 'style-outlet'),
+								'default' => 0,
+								'sanitize_callback' => 'style_outlet_boolean',    
+							),
+							'author_bio_box' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Author Bio Box below single post', 'style-outlet'),
+								'default' => 0,
+								'sanitize_callback' => 'style_outlet_boolean',    
+							),
+							'related_posts' => array(
+								'type' => 'checkbox',
+								'label' => __('Show Related posts', 'style-outlet'),
+								'default' => 0, 
+								'sanitize_callback' => 'style_outlet_boolean', 
+							),
+							'related_posts_hierarchy' => array(
+								'type' => 'radio',
+								'label' => __('Related Posts Must Be Shown As:', 'style-outlet'),
+								'choices' => array(
+									'1' => __('Related Posts By Tags', 'style-outlet'),
+									'2' => __('Related Posts By Categories', 'style-outlet'),      
+								),
+								'default' => '1', 
+								'sanitize_callback' => 'absint',    
+							),
 						),
 					),
-
 				)
 			),
 		) 
@@ -575,19 +612,19 @@ if ( ! function_exists( 'style_outlet_footer_copyright' ) ) {
 
     function style_outlet_footer_copyright($string) {
         $allowed_tags = array(    
-                            'a' => array(
-                            	'href' => array(),
-								'title' => array(),
-								'target' => array(), 
-                            ),
-							'img' => array(
-								'src' => array(),  
-								'alt' => array(),
-							),
-							'p' => array(),
-							'br' => array(),
-							'em' => array(),
-                            'strong' => array(),
+			'a' => array(
+				'href' => array(),
+				'title' => array(),
+				'target' => array(), 
+			),
+			'img' => array(
+				'src' => array(),  
+				'alt' => array(),
+			),
+			'p' => array(),
+			'br' => array(),
+			'em' => array(),
+			'strong' => array(),
         );
         return wp_kses( $string,$allowed_tags);
 

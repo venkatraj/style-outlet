@@ -4,11 +4,11 @@ Theme URI: http://www.genexthemes.com/style-outlet/
 Author: V. Uma Rani
 Author URI: http://www.genexthemes.com/
 Description: Style Outlet is Powerful multipurpose e-commerce/WooCommerce WordPress Theme. Style Outlet  is the perfect free theme for e-commerce shop. Style Outlet is responsive mobile optimized and using skeleton framework. Stylesheet is generated using SASS and so stays DRY. Best suited for Corporate/Business/Blog sites. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 4 Footer Widget Areas.
-Version: 1.0.5
+Version: 1.0.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: style-outlet
-Tags: e-commerce, blog, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options
+Tags: e-commerce, blog, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, theme-options
 Style Outlet WordPress Theme, Copyright (C) 2017, V. Uma Rani
 Style Outlet is distributed under the terms of the GNU GPL
 
@@ -611,7 +611,6 @@ table {
     border-top: 1px solid rgba(107, 107, 107, 0.6);
     border-bottom: 1px solid rgba(107, 107, 107, 0.6); }
     table thead tr th:first-child {
-     // display: block;
       text-align: center; }
   table tbody td {
     color: #6b6b6b; }
@@ -650,7 +649,6 @@ input[type="submit"] {
   padding: 1em 1.5em;
   color: #fff;
   font-weight: 700;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 button:hover,
@@ -771,7 +769,6 @@ dd {
 a {
   color: #605790;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   a:visited {
     color: #605790; }
@@ -1418,16 +1415,16 @@ object {
   .share-box ul li {
     border: 0;
     padding: 0;
-    margin: 0 8px 0px 0px;
+    margin: 0 10px 0px 0px;
     display: inline-block; }
     .share-box ul li a {
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       color: #222222;
       display: inline-block;
       background-color: #222222;
       text-align: center;
-      line-height: 30px;
+      line-height: 35px;
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
       color: #fff; }
@@ -1438,8 +1435,7 @@ object {
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
         font-size: 14px;
-        font-size: 1.4rem;
-        line-height: 2; }
+        font-size: 1.4rem; }
 
 .share-box {
   margin-bottom: 50px; }
@@ -2108,7 +2104,7 @@ blockquote {
   margin-bottom: 50px; }
   .entry-header h1 span {
     background: #605790;
-    padding: 3px 20px; }
+    padding: 4px 20px; }
 
 .flexslider {
   border: 0 !important;
@@ -2247,7 +2243,6 @@ blockquote {
 .woocommerce table.cart input,
 .woocommerce-page #content table.cart input,
 .woocommerce-page table.cart input {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 .woocommerce #content input.button,
@@ -2290,9 +2285,7 @@ blockquote {
   background: #272727 !important;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #272727), color-stop(100%, #45484d)) !important;
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #272727 0%, #45484d 100%) !important;
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2316,9 +2309,7 @@ blockquote {
   background: #666 !important;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #45484d)) !important;
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #666 0%, #45484d 100%) !important;
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2370,9 +2361,7 @@ blockquote {
   background: #f2f9fe;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2397,9 +2386,7 @@ blockquote {
   background: #fceabb;
   /* Old browsers */
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fceabb), color-stop(50%, #fccd4d), color-stop(51%, #f8b500), color-stop(100%, #fbdf93));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
@@ -2862,7 +2849,6 @@ blockquote {
     padding: 5px 10% 5px 3%; }
 
 .widget-area ul li {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #6b6b6b; }
   .widget-area ul li li {
@@ -3101,7 +3087,6 @@ blockquote {
     .site-footer .footer-widgets ul li {
       padding-bottom: 5px;
       padding-top: 5px;
-      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
       list-style: none;
       color: rgba(255, 255, 255, 0.7); }
@@ -3151,6 +3136,23 @@ blockquote {
       color: #fff; }
     .site-footer .footer-widgets .widget_rss ul li {
       background: none; }
+  .site-footer .scroll-to-top {
+    background: #605790;
+    color: #fff;
+    bottom: 10%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    border-radius: 4px;
+    transition: background-color 0.3s linear; }
+  .site-footer .scroll-to-top:hover {
+    background: rgba(96, 87, 144, 0.8); }
 
 .seven.columns ul li {
   display: inline-block;

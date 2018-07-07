@@ -403,6 +403,11 @@ if( !function_exists('style_outlet_register_plugins') ) {
 				'slug'     => 'woocommerce', // The plugin slug (typically the folder name).
 				'required' => false, // If false, the plugin is only 'recommended' instead of required.
 			),
+			array(
+				'name'               => 'WPForms Lite', // The plugin name.
+				'slug'               => 'wpforms-lite', // The plugin slug (typically the folder name).
+				'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+			),
 		);
 		/*
 		 * Array of configuration settings. Amend each line as needed.

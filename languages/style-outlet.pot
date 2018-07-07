@@ -1,4 +1,4 @@
-# Copyright (C) 2017 Style Outlet
+# Copyright (C) 2018 Style Outlet
 # This file is distributed under the same license as the Style Outlet package.
 msgid ""
 msgstr ""
@@ -28,19 +28,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:38, comments.php:57
+#: comments.php:38, comments.php:58
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:40, comments.php:59
+#: comments.php:40, comments.php:60
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:41, comments.php:60
+#: comments.php:41, comments.php:61
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:72
+#: comments.php:73
 msgid "Comments are closed."
 msgstr ""
 
@@ -52,79 +52,79 @@ msgstr ""
 msgid "Theme: Style Outlet by <a href=\"%1$s\" rel=\"designer\" target=\"_blank\">Genex Themes</a></p>"
 msgstr ""
 
-#: functions.php:48
+#: functions.php:49
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:125
 msgid "About Theme"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:126
 msgid "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 msgstr ""
 
-#: functions.php:166
+#: functions.php:167
 msgid "Post One"
 msgstr ""
 
-#: functions.php:167, functions.php:173
+#: functions.php:168, functions.php:174
 msgid "<h3>We are starting our business</h3><h1>Realize your goal Here</h1><a href=\"#\">GET THE THEME</a>"
 msgstr ""
 
-#: functions.php:172
+#: functions.php:173
 msgid "Post Two"
 msgstr ""
 
-#: functions.php:178
+#: functions.php:179
 msgid "For Men"
 msgstr ""
 
-#: functions.php:179, functions.php:185, functions.php:191
+#: functions.php:180, functions.php:186, functions.php:192
 msgid "Collection<br><a href=\"#\">Up-to 50 Off </a>"
 msgstr ""
 
-#: functions.php:184
+#: functions.php:185
 msgid "For Child"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:191
 msgid "For Women"
 msgstr ""
 
-#: functions.php:200
+#: functions.php:201
 msgid "slider one"
 msgstr ""
 
-#: functions.php:204
+#: functions.php:205
 msgid "Page Images"
 msgstr ""
 
-#: functions.php:254
+#: functions.php:255
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:263
+#: functions.php:264
 msgid "Top Left"
 msgstr ""
 
-#: functions.php:272
+#: functions.php:273
 msgid "Top Right"
 msgstr ""
 
-#: functions.php:282
+#: functions.php:283
 msgid "Footer %d"
 msgstr ""
 
-#: functions.php:292
+#: functions.php:293
 msgid "Footer Nav"
 msgstr ""
 
-#: functions.php:352, header.php:69
+#: functions.php:353, header.php:69
 msgid "View your shopping cart"
 msgstr ""
 
-#: functions.php:352, header.php:70
+#: functions.php:353, header.php:70
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
@@ -138,8 +138,12 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: single.php:35
+#: single.php:77
 msgid "About Author:"
+msgstr ""
+
+#: template-full-width.php:2
+msgid "Full Width Template"
 msgstr ""
 
 #: admin/class-tgm-plugin-activation.php:327
@@ -402,14 +406,17 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
+#. translators: %2$s: plugin name in screen reader markup
 #: admin/class-tgm-plugin-activation.php:2603
 msgid "Install %2$s"
 msgstr ""
 
+#. translators: %2$s: plugin name in screen reader markup
 #: admin/class-tgm-plugin-activation.php:2608
 msgid "Update %2$s"
 msgstr ""
 
+#. translators: %2$s: plugin name in screen reader markup
 #: admin/class-tgm-plugin-activation.php:2614
 msgid "Activate %2$s"
 msgstr ""
@@ -458,14 +465,17 @@ msgstr ""
 msgid "Plugin activation failed."
 msgstr ""
 
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: admin/class-tgm-plugin-activation.php:3498
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
+#. translators: 1: plugin name, 2: error message.
 #: admin/class-tgm-plugin-activation.php:3501
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
+#. translators: 1: plugin name.
 #: admin/class-tgm-plugin-activation.php:3503
 msgid "The installation of %1$s failed."
 msgstr ""
@@ -474,6 +484,7 @@ msgstr ""
 msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
+#. translators: 1: plugin name.
 #: admin/class-tgm-plugin-activation.php:3509
 msgid "%1$s installed and activated successfully."
 msgstr ""
@@ -490,6 +501,7 @@ msgstr ""
 msgid "All installations and activations have been completed."
 msgstr ""
 
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: admin/class-tgm-plugin-activation.php:3512
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
@@ -498,6 +510,7 @@ msgstr ""
 msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
+#. translators: 1: plugin name.
 #: admin/class-tgm-plugin-activation.php:3517
 msgid "%1$s installed successfully."
 msgstr ""
@@ -506,6 +519,7 @@ msgstr ""
 msgid "All installations have been completed."
 msgstr ""
 
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: admin/class-tgm-plugin-activation.php:3520
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
@@ -864,107 +878,127 @@ msgid "Footer Widget Area"
 msgstr ""
 
 #: inc/options-config.php:423
+msgid "Enable Scroll To Top"
+msgstr ""
+
+#: inc/options-config.php:429
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: inc/options-config.php:424
+#: inc/options-config.php:430
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: inc/options-config.php:430
+#: inc/options-config.php:436
 msgid "Home"
 msgstr ""
 
-#: inc/options-config.php:431
+#: inc/options-config.php:437
 msgid "Home Page options"
 msgstr ""
 
-#: inc/options-config.php:435
+#: inc/options-config.php:441
 msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: inc/options-config.php:441
+#: inc/options-config.php:447
 msgid "Slider Posts Category"
 msgstr ""
 
-#: inc/options-config.php:446
+#: inc/options-config.php:452
 msgid "No. of Sliders"
 msgstr ""
 
-#: inc/options-config.php:452
+#: inc/options-config.php:458
 msgid "Enable Home page Service Section Discount Offer"
 msgstr ""
 
-#: inc/options-config.php:458, inc/options-config.php:463, inc/options-config.php:468
+#: inc/options-config.php:464, inc/options-config.php:469, inc/options-config.php:474
 msgid "Select the page to display Service Offer"
 msgstr ""
 
-#: inc/options-config.php:481
+#: inc/options-config.php:486
 msgid "Blog"
 msgstr ""
 
-#: inc/options-config.php:482
+#: inc/options-config.php:487
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: inc/options-config.php:486
+#: inc/options-config.php:491
 msgid "Enable Featured Image"
 msgstr ""
 
-#: inc/options-config.php:492
+#: inc/options-config.php:497
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: inc/options-config.php:494, inc/options-config.php:510
+#: inc/options-config.php:499, inc/options-config.php:521
 msgid "Large Featured Image"
 msgstr ""
 
-#: inc/options-config.php:495, inc/options-config.php:511
+#: inc/options-config.php:500, inc/options-config.php:522
 msgid "Small Featured Image"
 msgstr ""
 
-#: inc/options-config.php:502
+#: inc/options-config.php:508
+msgid "Single Blog"
+msgstr ""
+
+#: inc/options-config.php:509
+msgid "Single Blog page Related Posts options"
+msgstr ""
+
+#: inc/options-config.php:513
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: inc/options-config.php:508
+#: inc/options-config.php:519
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: inc/options-config.php:518
-msgid " Enable Author Bio Box below single post"
-msgstr ""
-
-#: inc/options-config.php:519
-msgid "Show Author information box below single post."
-msgstr ""
-
-#: inc/options-config.php:525
-msgid "Show Related posts"
-msgstr ""
-
-#: inc/options-config.php:526
-msgid "Show related posts."
-msgstr ""
-
-#: inc/options-config.php:532
-msgid "Related Posts Must Be Shown As:"
-msgstr ""
-
-#: inc/options-config.php:534
-msgid "Related Posts By Tags"
+#: inc/options-config.php:529
+msgid " Enable Social Sharing Box below single post"
 msgstr ""
 
 #: inc/options-config.php:535
+msgid " Enable Facebook Sharing option below single post"
+msgstr ""
+
+#: inc/options-config.php:541
+msgid " Enable Twitter Sharing option below single post"
+msgstr ""
+
+#: inc/options-config.php:547
+msgid " Enable Linkedin Sharing option below single post"
+msgstr ""
+
+#: inc/options-config.php:553
+msgid " Enable Google Plus Sharing option below single post"
+msgstr ""
+
+#: inc/options-config.php:559
+msgid " Enable Email Sharing option below single post"
+msgstr ""
+
+#: inc/options-config.php:565
+msgid " Enable Author Bio Box below single post"
+msgstr ""
+
+#: inc/options-config.php:571
+msgid "Show Related posts"
+msgstr ""
+
+#: inc/options-config.php:577
+msgid "Related Posts Must Be Shown As:"
+msgstr ""
+
+#: inc/options-config.php:579
+msgid "Related Posts By Tags"
+msgstr ""
+
+#: inc/options-config.php:580
 msgid "Related Posts By Categories"
-msgstr ""
-
-#: inc/options-config.php:542
-msgid " Show Comments"
-msgstr ""
-
-#: inc/options-config.php:543
-msgid "Show Comments"
 msgstr ""
 
 #: inc/template-tags.php:28
@@ -977,6 +1011,7 @@ msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
+#. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:50, inc/template-tags.php:56
 msgid ", "
 msgstr ""
