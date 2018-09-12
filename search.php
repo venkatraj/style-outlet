@@ -23,7 +23,7 @@ get_template_part( 'template-parts/breadcrumb' ); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="entry-header">
-				<h1 class="entry-title"><span><?php printf( esc_html__( 'Search Results for: %s', 'style-outlet' ), get_search_query() ); ?></span></h1>
+				<h1 class="entry-title"><?php printf('%1$s: %2$s',__('Search Results For', 'style-outlet' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php

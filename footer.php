@@ -29,9 +29,7 @@
 				<?php if( get_theme_mod('copyright') ) : ?>
 							<p><?php echo style_outlet_footer_copyright(get_theme_mod('copyright')); ?></p>
 						<?php else : 
-								printf( __('<p>Powered by <a href="%1$s" target="_blank">WordPress</a>', 'style-outlet'), esc_url( 'http://wordpress.org/') );
-								printf( '<span class="sep"> .</span>' );
-								printf( __( 'Theme: Style Outlet by <a href="%1$s" rel="designer" target="_blank">Genex Themes</a></p>', 'style-outlet' ), esc_url('http://www.genexthemes.com/') );
+							echo sprintf( '<p> %1$s <a href="%2$s" target="_blank"> %3$s</a> %4$s <a href="%5$s" target="_blank" rel="designer">%6$s</a></p>', __('Powered by','style-outlet'), esc_url( 'http://wordpress.org/'), __('WordPress.','style-outlet'), __('Theme: Style Outlet by','style-outlet'), esc_url('https://www.genexthemes.com/'), __('Genex Themes','style-outlet')) ;
 					 endif;  ?>
 				</div>
 				<div class="left-sidebar eight columns">
