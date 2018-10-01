@@ -3,7 +3,7 @@ Contributors: Genex
 Tags: e-commerce, blog, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options
 Requires at least: 4.4
 Tested up to: 4.9.8
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,9 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
+= 1.0.8 = 
+* WPForms Lite plugin action removed.
+
 = 1.0.7 = 
 * Gutenberg unit test style added.
 
@@ -68,8 +71,8 @@ Enable/Disable featured images visibility.
 
 == Upgrade Notice ==
 
-= 1.0.7 = 
-* Gutenberg unit test style added.
+= 1.0.8 = 
+* WPForms Lite plugin action removed.
 
 == Resources ==
 * {_s}, GPLv3, http://underscores.me/
